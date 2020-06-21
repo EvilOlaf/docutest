@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Armbian team">
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Troubleshooting - Armbian Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Troubleshooting";
+    var mkdocs_page_input_path = "User-Guide_Basic-Troubleshooting.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-284946-9', 'docs.armbian.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Armbian Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Troubleshooting</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#powering-notes">Powering notes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#power-supply">Power supply</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cable">Cable</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#connector">Connector</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sd-card-notes">SD card notes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sd-card-brand">SD card brand</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sd-card-size-and-speed-class">SD card size and speed class</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#writing-images-to-the-sd-card">Writing images to the SD card</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Contributor Process</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Release management</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Community</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Armbian Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>User Guide &raquo;</li>
+        
+      
+    
+    <li>Troubleshooting</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/armbian/documentation/edit/master/docs/User-Guide_Basic-Troubleshooting.md"
+          class="icon icon-github"> Edit on Github</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="hardware-troubleshooting-guide">Hardware troubleshooting guide<a class="headerlink" href="#hardware-troubleshooting-guide" title="Permanent link">&para;</a></h1>
+<p>If you are experiencing at least one of these problems:</p>
+<ul>
+<li>board does not boot</li>
+<li>board freezes, crashes or reboots randomly or when connecting USB devices</li>
+<li>plugged in USB devices are not detected (not listed in <code>lsusb</code> output)</li>
+<li>error changing the root password at first boot (Authentication token manipulation error)</li>
+<li>error installing or updating packages due to read-only file system</li>
+</ul>
+<p>and you are using a stable Armbian image, then most likely you have one of two common problems - <strong>powering issue</strong> or <strong>SD card issue</strong>.</p>
+<p>Note that</p>
+<ul>
+<li><em>&ldquo;I know that my power supply is good&rdquo;, &ldquo;it worked yesterday&rdquo;, &ldquo;it works with a different device&rdquo;,</em> etc. are <strong>not objective reasons</strong> to skip powering related diagnostics</li>
+<li><em>&ldquo;I know that my SD card is good&rdquo;, &ldquo;it worked yesterday&rdquo;, &ldquo;it works with a different device&rdquo;,</em> etc. are <strong>not objective reasons</strong> to skip storage related diagnostics</li>
+<li>undervoltage can cause symptoms related to SD card problems such as filesystem corruptions and data loss, so powering has to be checked first</li>
+</ul>
+<h3 id="powering-notes">Powering notes<a class="headerlink" href="#powering-notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Most boards, even ones fitted with PMIC (power management integrated circuit) do not have any measures to react to undervoltage that could prevent instability</li>
+<li>It does not matter what voltage your power supply outputs, it matters what voltage will reach the onboard voltage regulators</li>
+<li>Peak power consumption of popular boards can vary from 0.9A at 5V (H3 based Orange Pi PC) to 1.7A at 5V (RK3288 based Tinkerboard), both without any attached peripherials like USB devices</li>
+<li>Due to the Ohm&rsquo;s law voltage drop due to cable and connector resistance will be proportional to the electric current, so most of the time problems will be experienced at current spikes caused by CPU load or peripherials like spinning up HDDs</li>
+</ul>
+<h4 id="power-supply">Power supply<a class="headerlink" href="#power-supply" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Cheap phone chargers may not provide the current listed on their label, especially for long time periods</li>
+<li>Some cheap phone chargers don&rsquo;t have proper feedback based stabilization, so output voltage may change depending on load</li>
+<li>Power supplies will degrade over time (especially when working 24/7)</li>
+<li>Some problems like degraded output filtering capacitors cannot be diagnosed even with a multimeter because of the non-linear voltage form</li>
+</ul>
+<h4 id="cable">Cable<a class="headerlink" href="#cable" title="Permanent link">&para;</a></h4>
+<ul>
+<li>The longer and thinner the cable - the higher its resistance - the greater the voltage drop will be under load</li>
+<li>Even thick looking cable can have thin wires inside, so do not trust the outside cable diameter</li>
+</ul>
+<h4 id="connector">Connector<a class="headerlink" href="#connector" title="Permanent link">&para;</a></h4>
+<ul>
+<li>MicroUSB connector is rated for the maximum current of 1.8A, but even this number cannot be guaranteed. Trying to pass larger current (even momentarily) may result in a voltage dropping below USB specifications</li>
+<li>Most of the boards can also be powered through GPIO pins. This can be used to bypass the microUSB connector and thus to improve stability</li>
+</ul>
+<h3 id="sd-card-notes">SD card notes<a class="headerlink" href="#sd-card-notes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A SD card is a complex storage device with an embedded controller that processes read, erase and write operations, wear leveling, error and corruption detection, but it does not provide any diagnostic protocols like S.M.A.R.T.</li>
+<li>SD cards will degrade over time and may fail in the end in different ways - become completely or partially read-only or cause a silent data corruption</li>
+</ul>
+<h4 id="sd-card-brand">SD card brand<a class="headerlink" href="#sd-card-brand" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Based on current prices and performance tests done by Armbian users Samsung Evo, Samsung Evo Plus and Sandisk Ultra cards are recommended</li>
+<li>Other good alternatives may be added to this page in the future</li>
+</ul>
+<h4 id="sd-card-size-and-speed-class">SD card size and speed class<a class="headerlink" href="#sd-card-size-and-speed-class" title="Permanent link">&para;</a></h4>
+<ul>
+<li>SD card speed class and size does not influence the reliability directly, but larger size means larger amount of lifetime data written, even if you are using 10-20% of the cards space</li>
+</ul>
+<h4 id="writing-images-to-the-sd-card">Writing images to the SD card<a class="headerlink" href="#writing-images-to-the-sd-card" title="Permanent link">&para;</a></h4>
+<ul>
+<li>If you wrote an image to the card it does not mean that it was written successfully without any errors</li>
+<li>so always verify images after write using some tools like <em>balenaEtcher</em> which is currently the only popular and cross-platform tool that does mandatory verify on write (more lightweight alternatives may be added to this page in the future)</li>
+<li>&ldquo;Check for bad blocks&rdquo; function available in some tools is mostly useless when dealing with SD cards</li>
+<li>Note that <em>balenaEtcher</em> verifies only 1-2GB that are occupied by the initial unresized image, it does not verify the whole SD card</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../User-Guide_Advanced-Features/" class="btn btn-neutral float-right" title="Advanced Features">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Quick_facts/" class="btn btn-neutral" title="Quick facts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Quick_facts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../User-Guide_Advanced-Features/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

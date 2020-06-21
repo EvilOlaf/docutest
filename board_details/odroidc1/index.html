@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Armbian team">
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Odroidc1 - Armbian Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Odroidc1";
+    var mkdocs_page_input_path = "board_details/odroidc1.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-284946-9', 'docs.armbian.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Armbian Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Getting-Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Quick_facts/">Quick facts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Advanced-Features/">Advanced Features</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Fine-Tuning/">Fine Tuning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Armbian-Config/">Armbian config</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner/">Allwinner (Generic)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-A20/">A10 and A20</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H3/">H2+ and H3</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H6/">H6</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Marvell/">Marvell Armada</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Preparation/">Building Armbian</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Options/">Build Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_User-Configurations/">User Configurations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_FEL-boot/">FEL boot</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Contributor Process</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Contribute/">Contribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Merge-Policy/">Merge Policy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Release management</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Release-Model/">Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Release_Changelog/">Changelog</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Community</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Community_IRC/">IRC</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Armbian Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Odroidc1</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/armbian/documentation/edit/master/docs/board_details/odroidc1.md"
+          class="icon icon-github"> Edit on Github</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <ul>
+<li>Please note: From a software point of view ODROID C1, C1+ and C0 are (nearly) identical. For Hardware differences between C1 and C1+ and to see how to use USB OTG on the latter please see <a href="http://odroid.com/dokuwiki/doku.php?id=en:c1_hardware#c1_has_below_improvements_from_the_original_c1">here</a>. C0 is a stripped down and more power efficient C1+ that can be battery powered (see here <a href="http://odroid.com/dokuwiki/doku.php?id=en:c0_read_battery_voltage">how to read out battery voltage</a>)</li>
+<li>Comprehensive device information and various tips&amp;tricks can be found in <a href="http://odroid.com/dokuwiki/doku.php?id=en:odroid-c1">Hardkernel&rsquo;s wiki</a>. Please be aware that some of the information does not apply to Armbian (eg. we use a different partition table). Schematics can be found <a href="http://dn.odroid.com/S805/Schematics/">here</a>.</li>
+<li>Idle consumption of an ODROID-C1+ with Armbian defaults varies between 1800 mW (@504 MHz) and 1900 mW (@1728 MHz &ndash; temperature also differs just by 2°C &ndash; for reasons please refer to the <a href="https://en.wikipedia.org/wiki/Dynamic_frequency_scaling#Performance_impact">&lsquo;race to idle&rsquo; concept</a>.</li>
+<li>By defining <code>setenv hdmioutput "0"</code> and <code>setenv vpu "0"</code> in <code>/boot/boot.ini</code> followed by a reboot you get true headless mode (no consumption savings but <code>MemTotal</code> increases from 804 MB to 941 MB &ndash; check <code>/proc/meminfo</code> if in doubt)</li>
+<li>You can save at least 170mW by cutting power to the internal USB hub (and also all USB devices connected to any of the type A receptacles) using <code>/sys/class/gpio/gpio4</code> (see description <a href="http://forum.odroid.com/viewtopic.php?f=112&amp;t=23763#p160852">here</a>). The same way you have full control over power consumption of a connected host powered USB disk: <code>umount /mnt/usb &amp;&amp; echo 0 &gt;/sys/class/gpio/gpio4/value</code> and <code>echo 1 &gt;/sys/class/gpio/gpio4/value &amp;&amp; sleep 2 &amp;&amp; mount /mnt/usb</code></li>
+<li>Interestingly at least on C1+ consumption remains the same if you switch from Gbit to Fast Ethernet or disable Ethernet at all. It seems the GbE PHY is powered all the time (maybe related to <a href="http://forum.odroid.com/viewtopic.php?f=115&amp;t=8121">performance/stabiity problems on ODROID-C1 in early 2015</a>)</li>
+<li>Ethernet performance is ~940 Mbits/sec in TX direction and 400-500 Mbits/sec in RX direction. You might be able to tweak the latter a little, just have a look in the link one paragraph above.</li>
+<li>the red led is a power led while the blue led is custom. Boot stage: as soon as u-boot is loaded the blue led lights solid and when kernel starts this changes to <code>heartbeat</code> blinking with default settings. Check <code>cat /sys/class/leds/*blue*/trigger</code> for other functionality.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

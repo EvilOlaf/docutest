@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Armbian team">
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Building Armbian - Armbian Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Building Armbian";
+    var mkdocs_page_input_path = "Developer-Guide_Build-Preparation.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-284946-9', 'docs.armbian.com');
+      ga('send', 'pageview');
+  </script>
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Armbian Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">User Guide</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Developer Guide</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Building Armbian</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Contributor Process</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Release management</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Community</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Armbian Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Developer Guide &raquo;</li>
+        
+      
+    
+    <li>Building Armbian</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/armbian/documentation/edit/master/docs/Developer-Guide_Build-Preparation.md"
+          class="icon icon-github"> Edit on Github</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="what-do-i-need">What do I need?<a class="headerlink" href="#what-do-i-need" title="Permanent link">&para;</a></h1>
+<ul>
+<li>x86/x64 machine running any OS; at least 4G RAM, SSD, quad core (recommended),</li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> or similar virtualization software <strong>(highly recommended with a minimum of 25GB hard disk space for the virtual disk image)</strong>,</li>
+<li>Setting up VirtualBox and compile environment is easy following our <a href="https://docs.armbian.com/Developer-Guide_Using-Vagrant/">Vagrant tutorial</a>,</li>
+<li><a href="../Developer-Guide_Building-with-Docker/">Docker</a> environment is also supported for building kernels and full OS images,</li>
+<li><strong>The officially supported</strong> compilation environment is <a href="http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/mini.iso">Ubuntu Focal 20.04 x64</a> <strong>only!</strong> (Support for Ubuntu 18.04 will be there until either we run into issues we do not want to waste time on or upstream support ends),</li>
+<li>installed basic system, OpenSSH and Samba (optional),</li>
+<li>no spaces in full path to the build script location allowed,</li>
+<li>superuser rights (configured <code>sudo</code> or root shell).</li>
+</ul>
+<p>Please note that system requirements (both hardware and OS/software) may differ depending on the build environment (Vagrant, Docker, Virtualbox, native).</p>
+<h1 id="how-to-start">How to start?<a class="headerlink" href="#how-to-start" title="Permanent link">&para;</a></h1>
+<h3 id="native-and-virtualbox-environments">Native and Virtualbox environments:<a class="headerlink" href="#native-and-virtualbox-environments" title="Permanent link">&para;</a></h3>
+<p>Login as root and run:</p>
+<pre><code>apt-get -y -qq install git
+git clone --depth 1 https://github.com/armbian/build
+cd build
+</code></pre>
+<p>Run the script</p>
+<pre><code>./compile.sh
+</code></pre>
+<p>Make sure that full path to the build script <strong>does not contain spaces</strong>.</p>
+<p><img alt="" src="http://www.armbian.com/wp-content/uploads/2016/01/21.png" /></p>
+<h3 id="providing-build-configuration">Providing build configuration<a class="headerlink" href="#providing-build-configuration" title="Permanent link">&para;</a></h3>
+<p>After the first run of <code>compile.sh</code> a new configuration file <code>config-example.conf</code> and symlink <code>config-default.conf</code> will be created.
+You may edit it to your needs or create different configuration files using it as a template.</p>
+<p>Alternatively you can supply options as command line parameters to compile.sh.
+Example:</p>
+<pre><code>./compile.sh BOARD=cubietruck BRANCH=current KERNEL_ONLY=yes RELEASE=bionic
+</code></pre>
+<p>Note: Option <code>BUILD_ALL</code> cannot be set to &ldquo;yes&rdquo; via command line parameter.</p>
+<h2 id="base-and-descendant-configuration">Base and descendant configuration<a class="headerlink" href="#base-and-descendant-configuration" title="Permanent link">&para;</a></h2>
+<p>You can create one base configuration (<code>config-base.conf</code>) and use this in descendant config (<code>config-dev.conf</code>). Three parameters (BRANCH, RELEASE, COMPRESS_OUTPUTIMAGE) will be overwritten.</p>
+<pre><code>. ./config-base.conf
+
+BRANCH="dev"
+RELEASE="buster"
+COMPRESS_OUTPUTIMAGE="sha,gz"
+</code></pre>
+<h3 id="using-our-automated-build-system">Using our automated build system<a class="headerlink" href="#using-our-automated-build-system" title="Permanent link">&para;</a></h3>
+<p>If you do not own the proper equipment to build images on your own, you can make use of the automated build system.
+Packages are recompiled every night (starting at 00:01 CEST) and a few testing images are produced.
+These images are accessible on the <a href="https://dl.armbian.com/">download server</a> under board folder, subfolder &ldquo;Nightly&rdquo;.
+Packages, when successfully built, are published in the beta repository.
+You can switch to beta repository in <a href="../User-Guide_Armbian-Config/">armbian-config</a> or by changing apt.armbian.com to beta.armbian.com in /etc/apt/sources.list.d/armbian.list.</p>
+<p>Board beta images are defined in board configuration files which are located <a href="https://github.com/armbian/build/tree/master/config/boards">here</a>.
+This is a typical board configuration:</p>
+<pre><code># A20 dual core 1Gb SoC
+BOARD_NAME="Banana Pi"
+LINUXFAMILY="sun7i"
+BOOTCONFIG="Bananapi_defconfig"
+MODULES="hci_uart gpio_sunxi rfcomm hidp sunxi-ir bonding spi_sun7i 8021q a20_tp #ap6211"
+MODULES_NEXT="brcmfmac bonding"
+#
+KERNEL_TARGET="legacy,current,dev"
+CLI_TARGET="buster,bionic,focal:current"
+DESKTOP_TARGET="stretch:legacy,current"
+
+CLI_BETA_TARGET=""
+DESKTOP_BETA_TARGET=""
+#
+BOARDRATING=""
+CHIP="http://docs.armbian.com/Hardware_Allwinner-A20/"
+HARDWARE="https://linux-sunxi.org/Banana_Pi"
+FORUMS="https://forum.armbian.com/forum/7-allwinner-a10a20/"
+BUY="http://amzn.to/2fToHjR"
+</code></pre>
+<p>You can find more information about those variables <a href="https://github.com/armbian/build/blob/master/config/boards/README.md">here</a>.</p>
+<p>If you want that our automated system start making images for this particular board, you need to alter parameters <code>CLI_BETA_TARGET</code> and <code>DESKTOP_BETA_TARGET</code>.
+Variants are depenendend from <code>KERNEL_TARGET</code> definitions and supported userlands: <code>buster</code>, <code>bionic</code>, <code>stretch</code>.
+To edit those parameters you need to push changes to the build script.
+You need to <a href="../Process_Contribute/">fork a project and create a pull request</a> and after it is imported by one of the administrators, images will start to show up in appropriate folder.</p>
+<p>If you want to enable Debian buster desktop image with <em>current</em> kernel choose the following:</p>
+<pre><code>DESKTOP_BETA_TARGET="buster:current"
+</code></pre>
+<p>or for command line interfaces Ubuntu Bionic based images with legacy kernel 4.19.x</p>
+<pre><code>CLI_BETA_TARGET="bionic:legacy"
+</code></pre>
+<p>or for image with latest upstream development kernel.</p>
+<pre><code>DESKTOP_BETA_TARGET="buster:dev"
+</code></pre>
+<h3 id="using-alternate-armbian-builder-repos-and-branches">Using alternate armbian builder repos and branches<a class="headerlink" href="#using-alternate-armbian-builder-repos-and-branches" title="Permanent link">&para;</a></h3>
+<p>By default, armbian-builder assumes working from <code>master</code> of <code>https://github.com/armbian/build.git</code>.  If you are working from your own repo / branch, <code>touch .ignore_changes</code> will cause armbian-builder to not attempt a repo checkout.</p>
+<h3 id="executing-any-bash-statement">Executing any bash statement<a class="headerlink" href="#executing-any-bash-statement" title="Permanent link">&para;</a></h3>
+<p>Currently, invoking compile.sh will run a monotonous task of building all the components into a final image.</p>
+<p>In some situation, especially when developing with Kernel or U-Boot, it is handy to run a portion of that great task like:</p>
+<pre><code>    # using default profile
+    ./compile.sh 'fetch_from_repo "$BOOTSOURCE" "$BOOTDIR" "$BOOTBRANCH" "yes"'
+    ./compile.sh 'compile_uboot'
+</code></pre>
+<p>You can also dump the variable:</p>
+<pre><code>    # using profile of `userpatches/config-my.conf`
+    ./compile.sh my 'echo $SRC/cache/sources/$BOOTSOURCEDIR'
+</code></pre>
+<p>NOTE: please use single quotes to keep the <code>$VAR</code> from early expansion in the command line shell.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Developer-Guide_Using-Vagrant/" class="btn btn-neutral float-right" title="Building with Vagrant">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Hardware_Marvell/" class="btn btn-neutral" title="Marvell Armada"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Hardware_Marvell/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Developer-Guide_Using-Vagrant/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
