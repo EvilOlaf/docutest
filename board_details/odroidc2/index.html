@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Odroidc2 - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Odroidc2 - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Odroidc2";
     var mkdocs_page_input_path = "board_details/odroidc2.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,187 +32,149 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="../.."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Odroidc2</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/board_details/odroidc2.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <ul>
-<li>Comprehensive device information and various tips&amp;tricks can be found in <a href="http://odroid.com/dokuwiki/doku.php?id=en:odroid-c2">Hardkernel&rsquo;s wiki</a>. Please be aware that some of the information does not apply to Armbian (eg. we use a different partition table). Schematics can be found <a href="http://dn.odroid.com/S905/Schematic/">here</a>.</li>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="../..">Docs</a> »</li>
+<li>Odroidc2</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/board_details/odroidc2.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<ul>
+<li>Comprehensive device information and various tips&amp;tricks can be found in <a href="http://odroid.com/dokuwiki/doku.php?id=en:odroid-c2">Hardkernel’s wiki</a>. Please be aware that some of the information does not apply to Armbian (eg. we use a different partition table). Schematics can be found <a href="http://dn.odroid.com/S905/Schematic/">here</a>.</li>
 <li>Idle consumption with legacy image in headless mode (<code>setenv nographics "1"</code> defined in <code>/boot/boot.ini</code>) and only Gigabit Ethernet connected is between ~2300 mW (@500 MHz) and ~2400 mW (@1536 MHz). Hardkernel provides the possibility to <a href="http://odroid.com/dokuwiki/doku.php?id=en:c2_set_cpu_freq">exceed 1536 MHz max cpufreq</a> but Armbian refrains from doing so. In case you want to change settings please keep in mind that you might have to adjust both <code>/boot/boot.ini</code> and <code>/etc/defaults/cpufrequtils</code>.</li>
 <li>The legacy kernel we use implements a few different cpufreq governors that show partially strange behaviour (<code>interactive</code> most of the times acting like <code>performance</code> for example). Since idle consumption differences between different cpufreq governors are negligible choosing even <code>performance</code> seems to be ok. At least <code>conservative</code> governor that switches between upper and lower clockspeeds (for details see <a href="https://github.com/igorpecovnik/lib/issues/499#issuecomment-253481174">here</a>) leads to some USB performance drops while not providing significant savings. In case you activate higher clockspeeds please keep in mind that switching then to <code>performance</code> governor is needed since otherwise you might end up with a slower system since the added cpufreq operating points will slow down switching to highest clockspeed when needed.</li>
-<li>If you don&rsquo;t need GbE network transfer speeds switching to Fast Ethernet with <code>ethtool -s eth0 speed 100 duplex full</code> saves ~230 mW. Completely disabling Ethernet saves an additional 100mW.</li>
+<li>If you don’t need GbE network transfer speeds switching to Fast Ethernet with <code>ethtool -s eth0 speed 100 duplex full</code> saves ~230 mW. Completely disabling Ethernet saves an additional 100mW.</li>
 <li>GbE Ethernet speed should reach 935 Mbits/sec in TX direction. In RX direction with defaults you should get 800 Mbits/sec but with some tuning it should be able to exceed 900 Mbits/sec:</li>
 <li>echo 32768 &gt; /proc/sys/net/core/rps_sock_flow_entries</li>
 <li>echo 32768 &gt; /sys/class/net/eth0/queues/rx-0/rps_flow_cnt</li>
 <li>You can save at least 170mW by cutting power to the internal USB hub (and also all USB devices connected to any of the type A receptacles) using <code>/sys/class/gpio/gpio126</code> (see description <a href="http://forum.odroid.com/viewtopic.php?t=22637&amp;p=151969#p151982">here</a>). The same way you have full control over power consumption of a connected host powered USB disk: <code>umount /mnt/usb &amp;&amp; echo 0 &gt;/sys/class/gpio/gpio126/value</code> and <code>echo 1 &gt;/sys/class/gpio/gpio126/value &amp;&amp; sleep 2 &amp;&amp; mount /mnt/usb</code></li>
-<li>Reducing DRAM clockspeed to reduce consumption doesn&rsquo;t work (difference between default 912 MHz and 408 MHz is just ~100mW less and also <a href="http://odroid.com/dokuwiki/doku.php?id=en:c2_adjust_ddrclk">requires a reboot</a>)</li>
+<li>Reducing DRAM clockspeed to reduce consumption doesn’t work (difference between default 912 MHz and 408 MHz is just ~100mW less and also <a href="http://odroid.com/dokuwiki/doku.php?id=en:c2_adjust_ddrclk">requires a reboot</a>)</li>
 <li>the red led is a power led while the blue led is custom. Boot stage: as soon as u-boot is loaded the blue led lights solid and when kernel starts this changes to <code>heartbeat</code> blinking with default settings. Check <code>cat /sys/class/leds/*blue*/trigger</code> for other functionality.</li>
 </ul>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-    </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+</span>
+</div>
+<script>var base_url = '../..';</script>
+<script defer="" src="../../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Getting Started - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Getting Started - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Getting Started";
     var mkdocs_page_input_path = "User-Guide_Getting-Started.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,180 +32,153 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Getting Started</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#what-to-download">What to download?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#legacy-or-current">Legacy or current?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-are-testing-images">What are testing images?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#what-are-experimentaldev-images">What are experimental/dev images?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-check-download-authenticity">How to check download authenticity?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-check-download-integrity">How to check download integrity?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-prepare-a-sd-card">How to prepare a SD card?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-boot">How to boot?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-login">How to login?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-update">How to update?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-update-u-boot">How to update u-boot?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-adjust-hardware-features">How to adjust hardware features?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-install-to-emmc-nand-sata-usb">How to install to eMMC, NAND, SATA &amp; USB?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-connect-to-wireless">How to connect to wireless?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#how-to-set-fixed-ip">How to set fixed IP?</a>
-    </li>
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>User Guide &raquo;</li>
-        
-      
-    
-    <li>Getting Started</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/User-Guide_Getting-Started.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Getting Started</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#what-to-download">What to download?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#legacy-or-current">Legacy or current?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-testing-images">What are testing images?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-experimentaldev-images">What are experimental/dev images?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-check-download-authenticity">How to check download authenticity?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-check-download-integrity">How to check download integrity?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-prepare-a-sd-card">How to prepare a SD card?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-boot">How to boot?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-login">How to login?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-update">How to update?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-update-u-boot">How to update u-boot?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-adjust-hardware-features">How to adjust hardware features?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-install-to-emmc-nand-sata-usb">How to install to eMMC, NAND, SATA &amp; USB?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-connect-to-wireless">How to connect to wireless?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-set-fixed-ip">How to set fixed IP?</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="prerequisites-for-new-users">Prerequisites for new users<a class="headerlink" href="#prerequisites-for-new-users" title="Permanent link">&para;</a></h1>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>User Guide »</li>
+<li>Getting Started</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/User-Guide_Getting-Started.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="prerequisites-for-new-users">Prerequisites for new users<a class="headerlink" href="#prerequisites-for-new-users" title="Permanent link">¶</a></h1>
 <p>Please, make sure you have:</p>
 <ul>
 <li>a proper power supply according to the board manufacturer requirements (basic usage example: 5V/2A with DC Jack barrel OR <strong>thick</strong> USB cable)</li>
-<li>a reliable SD card (see below &ldquo;How to prepare a SD card?&rdquo;)</li>
+<li>a reliable SD card (see below “How to prepare a SD card?”)</li>
 </ul>
-<h3 id="what-to-download">What to download?<a class="headerlink" href="#what-to-download" title="Permanent link">&para;</a></h3>
+<h3 id="what-to-download">What to download?<a class="headerlink" href="#what-to-download" title="Permanent link">¶</a></h3>
 <p>The download for each image consists of three separate files:  An <strong>xz-compressed image file</strong>, a <strong>sha file</strong> for download verification and an <strong>asc file</strong> for image authentication.  </p>
 <p>For each board we usually provide:</p>
 <ul>
@@ -219,23 +187,23 @@
 </ul>
 <p>Other unsupported builds may also be available(like Debian Stretch/Bullseye Ubuntu Disco/Eoan).</p>
 <p>Some boards have different options due to their hardware specialities - router or IoT boards.</p>
-<h3 id="legacy-or-current">Legacy or current?<a class="headerlink" href="#legacy-or-current" title="Permanent link">&para;</a></h3>
+<h3 id="legacy-or-current">Legacy or current?<a class="headerlink" href="#legacy-or-current" title="Permanent link">¶</a></h3>
 <p>Only <em>current</em> kernel branch is considered fully supported and can bring up video acceleration for example. NAND support is there but is still experimental.</p>
 <p>The level of kernel support does depend on the board family. If in your specific case something does not work well, you are always free to try an image with <em>legacy</em> kernel included.</p>
-<h3 id="what-are-testing-images">What are testing images?<a class="headerlink" href="#what-are-testing-images" title="Permanent link">&para;</a></h3>
+<h3 id="what-are-testing-images">What are testing images?<a class="headerlink" href="#what-are-testing-images" title="Permanent link">¶</a></h3>
 <ul>
 <li>made from stable branches</li>
 <li>not very well tested</li>
 <li>for end users</li>
 </ul>
-<h3 id="what-are-experimentaldev-images">What are experimental/dev images?<a class="headerlink" href="#what-are-experimentaldev-images" title="Permanent link">&para;</a></h3>
+<h3 id="what-are-experimentaldev-images">What are experimental/dev images?<a class="headerlink" href="#what-are-experimentaldev-images" title="Permanent link">¶</a></h3>
 <ul>
 <li>made from unstable branches</li>
 <li>unstested</li>
 <li>for experienced users only</li>
 </ul>
 <p>Do not use testing or dev images in a productive environment. We do appreciate  your constructive <a href="https://forum.armbian.com/forum/4-development/">feedback to developers</a>.</p>
-<h3 id="how-to-check-download-authenticity">How to check download authenticity?<a class="headerlink" href="#how-to-check-download-authenticity" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-check-download-authenticity">How to check download authenticity?<a class="headerlink" href="#how-to-check-download-authenticity" title="Permanent link">¶</a></h3>
 <p>All our images are digitally signed and therefore it is possible to check their authenticity.  You need to  issue these commands (Linux/macOS, you might need to install dependencies first, eg. <code>apt-get install gnupg</code> on Debian/Ubuntu or <code>brew install gnupg</code> on macOS. on windows install the current simple gnupg <a href="https://gnupg.org/download/">Gnupg</a>:</p>
 <pre><code># download public key from the database
 gpg --keyserver ha.pool.sks-keyservers.net --recv-key DF00FAF1C577104B50BF1D0093D6889F9F0E78D5
@@ -252,16 +220,16 @@ gpg: Signature made Sun 03 Jan 2016 11:46:25 AM CET using RSA key ID 9F0E78D5
 gpg: BAD signature from "Igor Pecovnik (Ljubljana, Slovenia) &lt;igor.++++++++++++@gmail.com&gt;"
 </code></pre>
 <p>It is safe to ignore the message <code>WARNING: This key is not certified with a trusted signature!</code>.</p>
-<h3 id="how-to-check-download-integrity">How to check download integrity?<a class="headerlink" href="#how-to-check-download-integrity" title="Permanent link">&para;</a></h3>
-<p>Since it might happen that your download got somehow corrupted we integrate a checksum/hash for the image.  You can compare the image&rsquo;s SHA-256 hash with the one contained in the <code>sha256sum.sha</code> file. </p>
+<h3 id="how-to-check-download-integrity">How to check download integrity?<a class="headerlink" href="#how-to-check-download-integrity" title="Permanent link">¶</a></h3>
+<p>Since it might happen that your download got somehow corrupted we integrate a checksum/hash for the image.  You can compare the image’s SHA-256 hash with the one contained in the <code>sha256sum.sha</code> file. </p>
 <p>On Windows, you can download and use the <a href="https://quickhash-gui.org/download/quickhash-v3-1-0-windows/">QuickHash GUI</a> and follow the instructions in the gui.</p>
 <p>while on Linux/macOS, in the directory in which you have downloaded the files ,you would do this</p>
 <pre><code>shasum -a 256 -c Armbian_*.img.sha Armbian_*.img.xz
 #good response
 Armbian_5.35_Clearfogpro_Debian_stretch_next_4.13.16.img: OK
 </code></pre>
-<h3 id="how-to-prepare-a-sd-card">How to prepare a SD card?<a class="headerlink" href="#how-to-prepare-a-sd-card" title="Permanent link">&para;</a></h3>
-<p><strong>Important note:</strong> Make sure you use a <strong>good, reliable and fast</strong> SD card. If you encounter boot or stability troubles in over 95 percent of the time it is either insufficient power supply or related to SD card (bad card, bad card reader, something went wrong when burning the image, card too slow to boot &ndash; &lsquo;Class 10&rsquo; highly recommended!). Armbian can simply not run on unreliable hardware so checking your SD card with either <a href="http://oss.digirati.com.br/f3/">F3</a> or <a href="http://www.heise.de/download/h2testw.html">H2testw</a> is mandatory if you run in problems. Since <a href="http://www.happybison.com/reviews/how-to-check-and-spot-fake-micro-sd-card-8/">counterfeit SD cards</a> are still an issue checking with F3/H2testw directly after purchase is <strong>highly recommended</strong>.</p>
+<h3 id="how-to-prepare-a-sd-card">How to prepare a SD card?<a class="headerlink" href="#how-to-prepare-a-sd-card" title="Permanent link">¶</a></h3>
+<p><strong>Important note:</strong> Make sure you use a <strong>good, reliable and fast</strong> SD card. If you encounter boot or stability troubles in over 95 percent of the time it is either insufficient power supply or related to SD card (bad card, bad card reader, something went wrong when burning the image, card too slow to boot – ‘Class 10’ highly recommended!). Armbian can simply not run on unreliable hardware so checking your SD card with either <a href="http://oss.digirati.com.br/f3/">F3</a> or <a href="http://www.heise.de/download/h2testw.html">H2testw</a> is mandatory if you run in problems. Since <a href="http://www.happybison.com/reviews/how-to-check-and-spot-fake-micro-sd-card-8/">counterfeit SD cards</a> are still an issue checking with F3/H2testw directly after purchase is <strong>highly recommended</strong>.</p>
 <p>Write the xz compressed image  with <a href="https://gitlab.com/bztsrc/usbimager">USBImager</a> or <a href="https://balena.io/etcher">Etcher</a> on all platforms since unlike other tools, either can validate  burning results <strong>saving you from corrupted SD card contents</strong>.</p>
 <p>Also important: Most SD cards are only optimised for sequential reads/writes as it is common with digital cameras. This is what the <em>speed class</em> is about. The SD Association defined <a href="https://www.sdcard.org/developers/overview/application/index.html"><em>Application Performance Class</em></a> as a standard for random IO performance.</p>
 <table>
@@ -277,14 +245,14 @@ Armbian_5.35_Clearfogpro_Debian_stretch_next_4.13.16.img: OK
 <tbody>
 <tr>
 <td>Class 1 (A1)</td>
-<td><img alt="a1-logo" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/a1-logo.png" /></td>
+<td><img alt="a1-logo" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/a1-logo.png"/></td>
 <td>1500 4k IOPS</td>
 <td>500 4k IOPS</td>
 <td>10MBytes/sec</td>
 </tr>
 <tr>
 <td>Class 2 (A2)</td>
-<td><img alt="a2-logo" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/a2-logo.png" /></td>
+<td><img alt="a2-logo" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/a2-logo.png"/></td>
 <td>4000 4k IOPS</td>
 <td>2000 4k IOPS</td>
 <td>10MBytes/sec</td>
@@ -292,32 +260,32 @@ Armbian_5.35_Clearfogpro_Debian_stretch_next_4.13.16.img: OK
 </tbody>
 </table>
 <p>At the time of this writing A1 and A2 cards are only widely available from SanDisk. Armbian recommends A1 rated SD-Cards <strong>only</strong> now (<a href="https://github.com/ThomasKaiser/Knowledge/blob/master/articles/A1_and_A2_rated_SD_cards.md">A2 rated cards need yet lacking driver support and therefore show lower overall and especially random IO performance</a>). For example:</p>
-<p><img alt="a1-16gb-card" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/sandisk-ultra-a1.png" /> <img alt="a1-32gb-card" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/sandisk-extremepro-a1.png" /> <img alt="a2-64gb-card" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/sandisk-extreme-a2.png" /></p>
-<p>In case you chose an SD card that was already in use before please consider resetting it back to &lsquo;factory default&rsquo; performance with <a href="https://www.sdcard.org/downloads/formatter_4/">SD Formatter</a> before burning Armbian to it (<a href="https://forum.armbian.com/topic/3776-the-partition-is-not-resized-to-full-sd-card-size/&amp;do=findComment&amp;comment=27413">explanation in the forum</a>). Detailed information regarding <a href="https://forum.armbian.com/topic/954-sd-card-performance/?page=3&amp;tab=comments#comment-49811">&lsquo;factory default&rsquo; SD card performance</a>.</p>
-<h3 id="how-to-boot">How to boot?<a class="headerlink" href="#how-to-boot" title="Permanent link">&para;</a></h3>
+<p><img alt="a1-16gb-card" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/sandisk-ultra-a1.png"/> <img alt="a1-32gb-card" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/sandisk-extremepro-a1.png"/> <img alt="a2-64gb-card" src="https://raw.githubusercontent.com/armbian/documentation/master/docs/images/sandisk-extreme-a2.png"/></p>
+<p>In case you chose an SD card that was already in use before please consider resetting it back to ‘factory default’ performance with <a href="https://www.sdcard.org/downloads/formatter_4/">SD Formatter</a> before burning Armbian to it (<a href="https://forum.armbian.com/topic/3776-the-partition-is-not-resized-to-full-sd-card-size/&amp;do=findComment&amp;comment=27413">explanation in the forum</a>). Detailed information regarding <a href="https://forum.armbian.com/topic/954-sd-card-performance/?page=3&amp;tab=comments#comment-49811">‘factory default’ SD card performance</a>.</p>
+<h3 id="how-to-boot">How to boot?<a class="headerlink" href="#how-to-boot" title="Permanent link">¶</a></h3>
 <p>Insert SD card into a slot and power the board. (First) boot (with DHCP) takes up to two minutes with a class 10 SD card and cheapest board.</p>
-<h3 id="how-to-login">How to login?<a class="headerlink" href="#how-to-login" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-login">How to login?<a class="headerlink" href="#how-to-login" title="Permanent link">¶</a></h3>
 <p>Login as <strong>root</strong> on console (HDMI / serial) or via SSH and use password <strong>1234</strong>. You will be prompted to change this password at first login. You will then be asked to create a normal user account that is sudo enabled (beware of default QWERTY keyboard settings at this stage). Please use <a href="http://angryip.org/">this tool</a>, to find your board IP address.</p>
 <p>Desktop images start into desktop without asking for password. To change this add some display manager:</p>
 <pre><code>apt-get install lightdm
 </code></pre>
-<p>&hellip; or edit the contents of file:</p>
+<p>… or edit the contents of file:</p>
 <pre><code>/etc/default/nodm
 </code></pre>
 <p>and change the autologin user.</p>
-<h3 id="how-to-update">How to update?<a class="headerlink" href="#how-to-update" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-update">How to update?<a class="headerlink" href="#how-to-update" title="Permanent link">¶</a></h3>
 <pre><code>apt update
 apt upgrade
 </code></pre>
 <p><strong>Update process can take hours in case of using cheap SD card and/or under heavy load.</strong></p>
 <p>If the kernel was upgraded during this process you will be prompted to reboot at next login.</p>
-<h3 id="how-to-update-u-boot">How to update u-boot?<a class="headerlink" href="#how-to-update-u-boot" title="Permanent link">&para;</a></h3>
-<p>First you need to update packages described in a previous &ldquo;How to update&rdquo; step. Then run armbian-config utility, go to system settings and proceed to:</p>
-<p><strong>&ldquo;Install&rdquo; &ldquo;Install to/update boot loader&rdquo;</strong> -&gt; <strong>Install/Update the bootloader on SD/eMMC</strong></p>
-<h3 id="how-to-adjust-hardware-features">How to adjust hardware features?<a class="headerlink" href="#how-to-adjust-hardware-features" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-update-u-boot">How to update u-boot?<a class="headerlink" href="#how-to-update-u-boot" title="Permanent link">¶</a></h3>
+<p>First you need to update packages described in a previous “How to update” step. Then run armbian-config utility, go to system settings and proceed to:</p>
+<p><strong>“Install” “Install to/update boot loader”</strong> -&gt; <strong>Install/Update the bootloader on SD/eMMC</strong></p>
+<h3 id="how-to-adjust-hardware-features">How to adjust hardware features?<a class="headerlink" href="#how-to-adjust-hardware-features" title="Permanent link">¶</a></h3>
 <p><a href="../User-Guide_Armbian-Config/">Use the Armbian configuration utility <code>armbian-config</code></a></p>
-<h3 id="how-to-install-to-emmc-nand-sata-usb">How to install to eMMC, NAND, SATA &amp; USB?<a class="headerlink" href="#how-to-install-to-emmc-nand-sata-usb" title="Permanent link">&para;</a></h3>
-<p><img alt="Installer" src="https://www.armbian.com/wp-content/uploads/2016/12/nandsata.png" /></p>
+<h3 id="how-to-install-to-emmc-nand-sata-usb">How to install to eMMC, NAND, SATA &amp; USB?<a class="headerlink" href="#how-to-install-to-emmc-nand-sata-usb" title="Permanent link">¶</a></h3>
+<p><img alt="Installer" src="https://www.armbian.com/wp-content/uploads/2016/12/nandsata.png"/></p>
 <p>Required condition:</p>
 <p>NAND:</p>
 <ul>
@@ -344,19 +312,19 @@ apt upgrade
 <li>ext2,3,4</li>
 <li>btrfs</li>
 </ul>
-<p>On Allwinner devices after switching to boot from NAND or eMMC clearing the boot loader signature on the SD card is recommended: <code>dd if=/dev/zero of=/dev/mmcblkN bs=1024 seek=8 count=1</code> (replace <code>/dev/mmcblkN</code> with the correct device node &ndash; in case you run this directly after <code>nand-sata-install</code> without a reboot in between then it&rsquo;s <code>/dev/mmcblk0</code>). When booting from eMMC to get SD cards auto-detected on Allwinner legacy images please consider changing <code>mmc0</code>&lsquo;s <code>sdc_detmode</code> from 3 to 1 in the board&rsquo;s fex file (see <a href="https://forum.armbian.com/topic/1702-orange-pi-plus-2e-where-is-16ghz-and-sd/?p=13163">here</a> for details).</p>
-<h3 id="how-to-connect-to-wireless">How to connect to wireless?<a class="headerlink" href="#how-to-connect-to-wireless" title="Permanent link">&para;</a></h3>
+<p>On Allwinner devices after switching to boot from NAND or eMMC clearing the boot loader signature on the SD card is recommended: <code>dd if=/dev/zero of=/dev/mmcblkN bs=1024 seek=8 count=1</code> (replace <code>/dev/mmcblkN</code> with the correct device node – in case you run this directly after <code>nand-sata-install</code> without a reboot in between then it’s <code>/dev/mmcblk0</code>). When booting from eMMC to get SD cards auto-detected on Allwinner legacy images please consider changing <code>mmc0</code>‘s <code>sdc_detmode</code> from 3 to 1 in the board’s fex file (see <a href="https://forum.armbian.com/topic/1702-orange-pi-plus-2e-where-is-16ghz-and-sd/?p=13163">here</a> for details).</p>
+<h3 id="how-to-connect-to-wireless">How to connect to wireless?<a class="headerlink" href="#how-to-connect-to-wireless" title="Permanent link">¶</a></h3>
 <p>Required condition: a board with onboard or supported 3rd party wireless adapter on USB</p>
 <p>If you know what is your wireless SSID:</p>
 <pre><code>nmtui-connect SSID
 </code></pre>
-<p><img alt="" src="https://www.armbian.com/wp-content/uploads/2016/12/wifi-1.png" /></p>
+<p><img alt="" src="https://www.armbian.com/wp-content/uploads/2016/12/wifi-1.png"/></p>
 <p>If you do not know, you can browse and then connect</p>
 <pre><code>nmtui-connect
 </code></pre>
-<p><img alt="" src="https://www.armbian.com/wp-content/uploads/2016/12/wifi-2.png" /></p>
-<h3 id="how-to-set-fixed-ip">How to set fixed IP?<a class="headerlink" href="#how-to-set-fixed-ip" title="Permanent link">&para;</a></h3>
-<p>By default your main network adapter&rsquo;s IP is assigned by your router DHCP server and all network interfaces are managed by <strong>NetworkManager</strong>:</p>
+<p><img alt="" src="https://www.armbian.com/wp-content/uploads/2016/12/wifi-2.png"/></p>
+<h3 id="how-to-set-fixed-ip">How to set fixed IP?<a class="headerlink" href="#how-to-set-fixed-ip" title="Permanent link">¶</a></h3>
+<p>By default your main network adapter’s IP is assigned by your router DHCP server and all network interfaces are managed by <strong>NetworkManager</strong>:</p>
 <pre><code>user@boardname:~$ nmcli con show
 NAME    UUID    TYPE    DEVICE 
 Wired connection 1  xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx    802-3-ethernet  eth0
@@ -372,57 +340,36 @@ Wired connection 1  xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx    802-3-ethernet  eth0
 <p>The same changes can also be done with NetworkManagers text user interface:</p>
 <pre><code>sudo nmtui
 </code></pre>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Quick_facts/" class="btn btn-neutral float-right" title="Quick facts">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../Quick_facts/" title="Quick facts">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href=".." title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../Quick_facts/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href=".." style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../Quick_facts/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Marvell Armada - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Marvell Armada - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Marvell Armada";
     var mkdocs_page_input_path = "Hardware_Marvell.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,193 +32,166 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Marvell Armada</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#build-version-status">Build Version Status</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#default">Default</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#next">Next</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#known-limitations">Known Limitations</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#notes">Notes</a>
-    </li>
-    </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Hardware Notes &raquo;</li>
-        
-      
-    
-    <li>Marvell Armada</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/Hardware_Marvell.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Marvell Armada</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#build-version-status">Build Version Status</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#default">Default</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#next">Next</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#known-limitations">Known Limitations</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#notes">Notes</a>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="helios4">Helios4<a class="headerlink" href="#helios4" title="Permanent link">&para;</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Hardware Notes »</li>
+<li>Marvell Armada</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/Hardware_Marvell.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="helios4">Helios4<a class="headerlink" href="#helios4" title="Permanent link">¶</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
 <p>All builds provide 100% hardware support for Helios4.</p>
-<h2 id="build-version-status">Build Version Status<a class="headerlink" href="#build-version-status" title="Permanent link">&para;</a></h2>
-<h3 id="default">Default<a class="headerlink" href="#default" title="Permanent link">&para;</a></h3>
+<h2 id="build-version-status">Build Version Status<a class="headerlink" href="#build-version-status" title="Permanent link">¶</a></h2>
+<h3 id="default">Default<a class="headerlink" href="#default" title="Permanent link">¶</a></h3>
 <ul>
 <li>U-Boot : 2018.11</li>
 <li>Linux Kernel : Mainline 4.14.y</li>
 <li>OS : Debian 9 Stretch</li>
 </ul>
-<h3 id="next">Next<a class="headerlink" href="#next" title="Permanent link">&para;</a></h3>
+<h3 id="next">Next<a class="headerlink" href="#next" title="Permanent link">¶</a></h3>
 <ul>
 <li>U-Boot : Mainline 2019.04</li>
 <li>Linux Kernel : Mainline 4.19.y</li>
 <li>OS : Debian 10 Buster or Ubuntu Bionic</li>
 </ul>
-<h3 id="known-limitations">Known Limitations<a class="headerlink" href="#known-limitations" title="Permanent link">&para;</a></h3>
+<h3 id="known-limitations">Known Limitations<a class="headerlink" href="#known-limitations" title="Permanent link">¶</a></h3>
 <ul>
 <li>
-<p>SDcard High Speed timing have compatibility issue with some brands.</br>
-Temporary workaround : Disable UHS option/support.</br>
-Can be manually enable, refer to the following <a href="https://wiki.kobol.io/sdcard">page</a>.</p>
-</li>
+<p>SDcard High Speed timing have compatibility issue with some brands.</p></li></ul></div></div></div></div></section></div></body></html>
+Temporary workaround : Disable UHS option/support.
+Can be manually enable, refer to the following <a href="https://wiki.kobol.io/sdcard">page</a>.
+
 <li>
-<p>During SATA heavy load, accessing SPI NOR Flash will generate ATA errors.</br>
-Temporary workaround : Disable SPI NOR flash.</br>
-Can be manually enable, refer to the following <a href="https://wiki.kobol.io/spi">page</a>.</p>
-</li>
-</ul>
-<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
+<p>During SATA heavy load, accessing SPI NOR Flash will generate ATA errors.</p></li>
+Temporary workaround : Disable SPI NOR flash.
+Can be manually enable, refer to the following <a href="https://wiki.kobol.io/spi">page</a>.
+
+
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">¶</a></h2>
 <p>Find more details about hardware support and configuration on <a href="https://wiki.kobol.io">Helios4 Wiki</a>.</p>
-<h1 id="clearfog-probase">Clearfog Pro/Base<a class="headerlink" href="#clearfog-probase" title="Permanent link">&para;</a></h1>
-<h2 id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Permanent link">&para;</a></h2>
+<h1 id="clearfog-probase">Clearfog Pro/Base<a class="headerlink" href="#clearfog-probase" title="Permanent link">¶</a></h1>
+<h2 id="overview_1">Overview<a class="headerlink" href="#overview_1" title="Permanent link">¶</a></h2>
 <p>Both builds provide close to 100% hardware support, some slight differences are listed below.</p>
-<h2 id="build-version-status_1">Build Version Status<a class="headerlink" href="#build-version-status_1" title="Permanent link">&para;</a></h2>
-<h3 id="default_1">Default<a class="headerlink" href="#default_1" title="Permanent link">&para;</a></h3>
+<h2 id="build-version-status_1">Build Version Status<a class="headerlink" href="#build-version-status_1" title="Permanent link">¶</a></h2>
+<h3 id="default_1">Default<a class="headerlink" href="#default_1" title="Permanent link">¶</a></h3>
 <p>System images with mainline 4.14.x kernel and u-boot 2018.1</p>
 <ul>
 <li><a href="http://www.kernel.org/">Mainline kernel</a> with large hardware support, headers and some firmware included</li>
@@ -235,7 +203,7 @@ Can be manually enable, refer to the following <a href="https://wiki.kobol.io/sp
 <li><a href="http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus">SPI</a> ready but untested.</li>
 <li>SFP is working at up to 1GB/s even with faster fiber modules</li>
 </ul>
-<h3 id="next_1">Next<a class="headerlink" href="#next_1" title="Permanent link">&para;</a></h3>
+<h3 id="next_1">Next<a class="headerlink" href="#next_1" title="Permanent link">¶</a></h3>
 <p>System images with mainline 4.19.x kernel and u-boot 2018.1</p>
 <ul>
 <li><a href="http://www.kernel.org/">Mainline kernel</a> with large hardware support, headers and some firmware included</li>
@@ -248,70 +216,49 @@ Can be manually enable, refer to the following <a href="https://wiki.kobol.io/sp
 <li>SFP ready and tested with a copper 1G module</li>
 <li>SFP DDMI is operational (<code>sudo ethtool -m eth2</code>)</li>
 </ul>
-<h4 id="bugs-or-limitation">Bugs or limitation<a class="headerlink" href="#bugs-or-limitation" title="Permanent link">&para;</a></h4>
+<h4 id="bugs-or-limitation">Bugs or limitation<a class="headerlink" href="#bugs-or-limitation" title="Permanent link">¶</a></h4>
 <ul>
 <li>all builds suffer from minor problems with specific mPCIe combinations. If you run into problems check <a href="https://docs.google.com/spreadsheets/d/1izPD5XUzQC0ZZWb8FMBMkofN73w-m_6bjrtZK-zr_b4">this test matrix</a> for some known working/not working combinations.</li>
 </ul>
-<h4 id="converting-mpcie-to-msata">Converting mPCIe to mSATA<a class="headerlink" href="#converting-mpcie-to-msata" title="Permanent link">&para;</a></h4>
+<h4 id="converting-mpcie-to-msata">Converting mPCIe to mSATA<a class="headerlink" href="#converting-mpcie-to-msata" title="Permanent link">¶</a></h4>
 <ul>
 <li>To convert mPCIe to mSATA you have to enable the corresponding patches in <a href="https://github.com/armbian/build/tree/master/patch/u-boot/u-boot-mvebu">u-boot-mvebu</a>. Afterwards rebuild u-boot with our build system and write the new u-boot to your boot medium. If you need assistance ask in the forum.</li>
 </ul>
-<h2 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">&para;</a></h2>
+<h2 id="notes_1">Notes<a class="headerlink" href="#notes_1" title="Permanent link">¶</a></h2>
 <ul>
 <li>In case you ever run into troubles and ask for help in the forums please ensure to provide a serial console log (UART adapter on board accessible through Micro USB with 115200/8/N/1 settings)</li>
 <li>The boards can boot from various sources that are adjustable with a DIP switch. Comprehensive information about the necessary preparations <a href="https://github.com/nightseas/arm_applications/blob/master/doc/getting_started_with_clearfog_base.md">available here</a>.</li>
 </ul>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Developer-Guide_Build-Preparation/" class="btn btn-neutral float-right" title="Building Armbian">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Hardware_Freescale-imx6/" class="btn btn-neutral" title="Freescale i.MX6"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
 
-  <hr/>
 
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../Developer-Guide_Build-Preparation/" title="Building Armbian">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../Hardware_Freescale-imx6/" title="Freescale i.MX6"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
 
-    </section>
 
-  </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../Hardware_Freescale-imx6/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../Developer-Guide_Build-Preparation/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../Hardware_Freescale-imx6/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../Developer-Guide_Build-Preparation/" style="color: #fcfcfc">Next »</a></span>
+</span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
 
-</body>
-</html>
+

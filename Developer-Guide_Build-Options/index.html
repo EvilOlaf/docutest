@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Build Options - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Build Options - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Build Options";
     var mkdocs_page_input_path = "Developer-Guide_Build-Options.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,232 +32,205 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Build Options</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Developer Guide &raquo;</li>
-        
-      
-    
-    <li>Build Options</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/Developer-Guide_Build-Options.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
-              
-                <ul>
-<li><strong>KERNEL_ONLY</strong> (yes&#124;no):<ul>
-<li>leave empty to display selection dialog each time</li>
-<li>set to &ldquo;yes&rdquo; to compile only kernel, u-boot and other packages for installing on existing Armbian system</li>
-<li>set to &ldquo;no&rdquo; to build complete OS image for writing to SD card</li>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Build Options</a>
+<ul class="current">
 </ul>
 </li>
-<li><strong>KERNEL_CONFIGURE</strong> (yes&#124;no):<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Developer Guide »</li>
+<li>Build Options</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/Developer-Guide_Build-Options.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<ul>
+<li><strong>KERNEL_ONLY</strong> (yes|no):<ul>
 <li>leave empty to display selection dialog each time</li>
-<li>set to &ldquo;yes&rdquo; to configure kernel (add or remove modules or features). Kernel configuration menu will be brought up before compilation</li>
-<li>set to &ldquo;no&rdquo; to compile kernel without changing default or custom provided configuration</li>
+<li>set to “yes” to compile only kernel, u-boot and other packages for installing on existing Armbian system</li>
+<li>set to “no” to build complete OS image for writing to SD card</li>
+</ul>
+</li>
+<li><strong>KERNEL_CONFIGURE</strong> (yes|no):<ul>
+<li>leave empty to display selection dialog each time</li>
+<li>set to “yes” to configure kernel (add or remove modules or features). Kernel configuration menu will be brought up before compilation</li>
+<li>set to “no” to compile kernel without changing default or custom provided configuration</li>
 </ul>
 </li>
 <li><strong>CLEAN_LEVEL</strong> (comma-separated list): defines what should be cleaned. Default value is <code>"make,debs"</code> - clean sources and remove all packages. Changing this option can be useful when rebuilding images or building more than one image<ul>
-<li>&ldquo;make&rdquo; = execute <code>make clean</code> for selected kernel and u-boot sources,</li>
-<li>&ldquo;images&rdquo; = delete <code>output/images</code> (complete OS images),</li>
-<li>&ldquo;debs&rdquo; = delete packages in <code>output/debs</code> for current branch and device family,</li>
-<li>&ldquo;alldebs&rdquo; = delete all packages in <code>output/debs</code>,</li>
-<li>&ldquo;cache&rdquo; = delete <code>cache/rootfs</code> (rootfs cache),</li>
-<li>&ldquo;oldcache&rdquo; = remove old <code>cache/rootfs</code> except for the newest 8 files,</li>
-<li>&ldquo;sources&rdquo; = delete <code>cache/sources</code> (all downloaded sources),</li>
-<li>&ldquo;extras&rdquo; = delete additional packages for current release in <code>output/debs/extra</code></li>
+<li>“make” = execute <code>make clean</code> for selected kernel and u-boot sources,</li>
+<li>“images” = delete <code>output/images</code> (complete OS images),</li>
+<li>“debs” = delete packages in <code>output/debs</code> for current branch and device family,</li>
+<li>“alldebs” = delete all packages in <code>output/debs</code>,</li>
+<li>“cache” = delete <code>cache/rootfs</code> (rootfs cache),</li>
+<li>“oldcache” = remove old <code>cache/rootfs</code> except for the newest 8 files,</li>
+<li>“sources” = delete <code>cache/sources</code> (all downloaded sources),</li>
+<li>“extras” = delete additional packages for current release in <code>output/debs/extra</code></li>
 </ul>
 </li>
 <li><strong>REPOSITORY_INSTALL</strong> (comma-separated list): list of core packages which will be installed from repository<ul>
-<li>&ldquo;u-boot&rdquo;, &ldquo;kernel&rdquo;, &ldquo;bsp&rdquo;, &ldquo;armbian-config&rdquo;, &ldquo;armbian-firmware&rdquo;</li>
-<li>&rdquo;&rdquo; = packages will be built from sources or use the one from local cache</li>
+<li>“u-boot”, “kernel”, “bsp”, “armbian-config”, “armbian-firmware”</li>
+<li>”” = packages will be built from sources or use the one from local cache</li>
 </ul>
 </li>
-<li><strong>KERNEL_KEEP_CONFIG</strong> (yes&#124;no):<ul>
-<li>set to &ldquo;yes&rdquo; to use kernel config file from previous compilation for the same branch, device family and version</li>
-<li>set to &ldquo;no&rdquo; to use default or user-provided config file</li>
+<li><strong>KERNEL_KEEP_CONFIG</strong> (yes|no):<ul>
+<li>set to “yes” to use kernel config file from previous compilation for the same branch, device family and version</li>
+<li>set to “no” to use default or user-provided config file</li>
 </ul>
 </li>
-<li><strong>BUILD_MINIMAL</strong> (yes&#124;no):<ul>
-<li>set to &ldquo;yes&rdquo; to build bare CLI image suitable for application deployment. This option is not compatible with BUILD_DESKTOP=&rdquo;yes&rdquo; and BUILD_EXTERNAL=&rdquo;yes&rdquo;</li>
+<li><strong>BUILD_MINIMAL</strong> (yes|no):<ul>
+<li>set to “yes” to build bare CLI image suitable for application deployment. This option is not compatible with BUILD_DESKTOP=”yes” and BUILD_EXTERNAL=”yes”</li>
 </ul>
 </li>
-<li><strong>BUILD_DESKTOP</strong> (yes&#124;no):<ul>
-<li>set to &ldquo;yes&rdquo; to build image with minimal desktop environment</li>
-<li>set to &ldquo;no&rdquo; to build image with console interface only</li>
+<li><strong>BUILD_DESKTOP</strong> (yes|no):<ul>
+<li>set to “yes” to build image with minimal desktop environment</li>
+<li>set to “no” to build image with console interface only</li>
 </ul>
 </li>
-<li><strong>EXTERNAL</strong> (yes&#124;no):<ul>
-<li>set to &ldquo;yes&rdquo; to compile and install extra applications and firmware</li>
+<li><strong>EXTERNAL</strong> (yes|no):<ul>
+<li>set to “yes” to compile and install extra applications and firmware</li>
 </ul>
 </li>
-<li><strong>BSPFREEZE</strong> (no&#124;yes): freeze (from update) armbian packages when building images (u-boot, kernel, dtb)</li>
-<li><strong>INSTALL_HEADERS</strong> (no&#124;yes): install kernel headers package</li>
-<li><strong>EXTERNAL_NEW</strong> (no&#124;prebuilt&#124;compile):<ul>
-<li>set to &ldquo;prebuilt&rdquo; to install extra applications from repository</li>
-<li>set to &ldquo;compile&rdquo; to compile extra applications in chroot</li>
+<li><strong>BSPFREEZE</strong> (no|yes): freeze (from update) armbian packages when building images (u-boot, kernel, dtb)</li>
+<li><strong>INSTALL_HEADERS</strong> (no|yes): install kernel headers package</li>
+<li><strong>EXTERNAL_NEW</strong> (no|prebuilt|compile):<ul>
+<li>set to “prebuilt” to install extra applications from repository</li>
+<li>set to “compile” to compile extra applications in chroot</li>
 </ul>
 </li>
-<li><strong>CREATE_PATCHES</strong> (yes&#124;no):<ul>
-<li>set to &ldquo;yes&rdquo; will prompt you right before the compilation starts to make changes to the source code. Separate for u-boot and kernel. It will also create a patch out of this. If you want that this patch is included in the normal run, you need to copy it to appropriate directory</li>
-<li>set to &ldquo;no&rdquo; compilation will run uninterrupted</li>
+<li><strong>CREATE_PATCHES</strong> (yes|no):<ul>
+<li>set to “yes” will prompt you right before the compilation starts to make changes to the source code. Separate for u-boot and kernel. It will also create a patch out of this. If you want that this patch is included in the normal run, you need to copy it to appropriate directory</li>
+<li>set to “no” compilation will run uninterrupted</li>
 </ul>
 </li>
-<li><strong>BUILD_ALL</strong> (yes&#124;no&#124;demo): cycle through all available board and kernel configurations and make images for all combinations</li>
-<li><strong>LIB_TAG</strong> (master&#124;&ldquo;branchname&rdquo;):<ul>
-<li>set to &ldquo;master&rdquo; to compile from the master branch (default)</li>
-<li>set to &ldquo;branchname&rdquo; to compile from any other branch available (&ldquo;next&rdquo; &amp; &ldquo;second&rdquo; are deprecated and <strong>not</strong> recommended to use).</li>
+<li><strong>BUILD_ALL</strong> (yes|no|demo): cycle through all available board and kernel configurations and make images for all combinations</li>
+<li><strong>LIB_TAG</strong> (master|“branchname”):<ul>
+<li>set to “master” to compile from the master branch (default)</li>
+<li>set to “branchname” to compile from any other branch available (“next” &amp; “second” are deprecated and <strong>not</strong> recommended to use).</li>
 </ul>
 </li>
 <li><strong>CARD_DEVICE</strong> (/dev/sdx) set to the device of your SD card. The image will be burned and verified using Etcher for CLI.</li>
-<li><strong>CRYPTROOT_ENABLE</strong> (yes&#124;no): set to enable LUKS encrypted rootfs. You must also provide unlock password CRYPTROOT_PASSPHRASE=&rdquo;MYSECRECTPASS&rdquo; and optional CRYPTROOT_SSH_UNLOCK=yes CRYPTROOT_SSH_UNLOCK_PORT=2222 CRYPTROOT_PARAMETERS=&rdquo;custom cryptsetup options&rdquo; Function might not work well with all distributions. Debian Buster and Stretch were tested. For building under the Docker you have to use privilege mode which can be enable in userpatches/config-docker. <strong>Warning:</strong> This feature was added as community contribution and mostly functional. Under some circumstances though the prompt will not be shown. Therefore it should be considered experimental.</li>
+<li><strong>CRYPTROOT_ENABLE</strong> (yes|no): set to enable LUKS encrypted rootfs. You must also provide unlock password CRYPTROOT_PASSPHRASE=”MYSECRECTPASS” and optional CRYPTROOT_SSH_UNLOCK=yes CRYPTROOT_SSH_UNLOCK_PORT=2222 CRYPTROOT_PARAMETERS=”custom cryptsetup options” Function might not work well with all distributions. Debian Buster and Stretch were tested. For building under the Docker you have to use privilege mode which can be enable in userpatches/config-docker. <strong>Warning:</strong> This feature was added as community contribution and mostly functional. Under some circumstances though the prompt will not be shown. Therefore it should be considered experimental.</li>
 </ul>
 <p>More info:</p>
 <p>[1] https://github.com/armbian/build/commit/681e58b6689acda6a957e325f12e7b748faa8330</p>
 <p>[2] https://github.com/armbian/build/issues/1183</p>
-<h3 id="hidden-options-to-minimize-user-input-for-build-automation">Hidden options to minimize user input for build automation:<a class="headerlink" href="#hidden-options-to-minimize-user-input-for-build-automation" title="Permanent link">&para;</a></h3>
+<h3 id="hidden-options-to-minimize-user-input-for-build-automation">Hidden options to minimize user input for build automation:<a class="headerlink" href="#hidden-options-to-minimize-user-input-for-build-automation" title="Permanent link">¶</a></h3>
 <ul>
 <li><strong>BOARD</strong> (string): you can set name of board manually to skip dialog prompt</li>
-<li><strong>BRANCH</strong> (legacy&#124;current&#124;dev): you can set kernel and u-boot branch manually to skip dialog prompt; some options may not be available for all devices</li>
-<li><strong>RELEASE</strong> (stretch&#124;buster&#124;bionic&#124;focal): you can set OS release manually to skip dialog prompt; use this option with <code>KERNEL_ONLY=yes</code> to create board support package</li>
+<li><strong>BRANCH</strong> (legacy|current|dev): you can set kernel and u-boot branch manually to skip dialog prompt; some options may not be available for all devices</li>
+<li><strong>RELEASE</strong> (stretch|buster|bionic|focal): you can set OS release manually to skip dialog prompt; use this option with <code>KERNEL_ONLY=yes</code> to create board support package</li>
 </ul>
-<h3 id="hidden-options-for-advanced-users-default-values-are-marked-bold">Hidden options for advanced users (default values are marked <strong>bold</strong>):<a class="headerlink" href="#hidden-options-for-advanced-users-default-values-are-marked-bold" title="Permanent link">&para;</a></h3>
+<h3 id="hidden-options-for-advanced-users-default-values-are-marked-bold">Hidden options for advanced users (default values are marked <strong>bold</strong>):<a class="headerlink" href="#hidden-options-for-advanced-users-default-values-are-marked-bold" title="Permanent link">¶</a></h3>
 <ul>
-<li><strong>EXPERT</strong> (yes&#124;<strong>no</strong>): Show development features in interactive mode</li>
+<li><strong>EXPERT</strong> (yes|<strong>no</strong>): Show development features in interactive mode</li>
 <li><strong>USERPATCHES_PATH</strong> (<strong>userpatches/</strong>): set alternate path for location of <code>userpatches</code> folder</li>
-<li><strong>USE_CCACHE</strong> (<strong>yes</strong>&#124;no): use a C compiler cache to speed up the build process</li>
-<li><strong>PRIVATE_CCACHE</strong> (yes&#124;<strong>no</strong>) use <code>$DEST/ccache</code> as ccache home directory</li>
-<li><strong>PROGRESS_DISPLAY</strong> (none&#124;<strong>plain</strong>&#124;dialog): way to display output of verbose processes - compilation, packaging, debootstrap</li>
-<li><strong>PROGRESS_LOG_TO_FILE</strong> (yes&#124;<strong>no</strong>): duplicate output, affected by previous option, to log files <code>output/debug/*.log</code></li>
-<li><strong>USE_MAINLINE_GOOGLE_MIRROR</strong> (yes&#124;<strong>no</strong>): use <code>googlesource.com</code> mirror for downloading mainline kernel sources, may be faster than <code>git.kernel.org</code> depending on your location</li>
-<li><strong>USE_GITHUB_UBOOT_MIRROR</strong> (yes&#124;<strong>no</strong>): use unofficial Github mirror for downloading mainline u-boot sources, may be faster than <code>git.denx.de</code> depending on your location</li>
-<li><strong>OFFLINE_WORK</strong> (yes&#124;<strong>no</strong>): skip downloading and updating sources as well as time and host check. Set to &ldquo;yes&rdquo; and you can collect packages without accessing the internet.</li>
-<li><strong>FORCE_USE_RAMDISK</strong> (yes&#124;no): overrides autodetect for using tmpfs in new debootstrap and image creation process</li>
+<li><strong>USE_CCACHE</strong> (<strong>yes</strong>|no): use a C compiler cache to speed up the build process</li>
+<li><strong>PRIVATE_CCACHE</strong> (yes|<strong>no</strong>) use <code>$DEST/ccache</code> as ccache home directory</li>
+<li><strong>PROGRESS_DISPLAY</strong> (none|<strong>plain</strong>|dialog): way to display output of verbose processes - compilation, packaging, debootstrap</li>
+<li><strong>PROGRESS_LOG_TO_FILE</strong> (yes|<strong>no</strong>): duplicate output, affected by previous option, to log files <code>output/debug/*.log</code></li>
+<li><strong>USE_MAINLINE_GOOGLE_MIRROR</strong> (yes|<strong>no</strong>): use <code>googlesource.com</code> mirror for downloading mainline kernel sources, may be faster than <code>git.kernel.org</code> depending on your location</li>
+<li><strong>USE_GITHUB_UBOOT_MIRROR</strong> (yes|<strong>no</strong>): use unofficial Github mirror for downloading mainline u-boot sources, may be faster than <code>git.denx.de</code> depending on your location</li>
+<li><strong>OFFLINE_WORK</strong> (yes|<strong>no</strong>): skip downloading and updating sources as well as time and host check. Set to “yes” and you can collect packages without accessing the internet.</li>
+<li><strong>FORCE_USE_RAMDISK</strong> (yes|no): overrides autodetect for using tmpfs in new debootstrap and image creation process</li>
 <li><strong>FIXED_IMAGE_SIZE</strong> (integer): create image file of this size (in megabytes) instead of minimal</li>
 <li><strong>COMPRESS_OUTPUTIMAGE</strong> (comma-separated list): create compressed archive with image file and GPG signature for redistribution<ul>
 <li><em>sha</em> - generate SHA256 hash for image,</li>
@@ -272,11 +240,11 @@
 <li><em>yes</em> - compatibility shorcut for sha,gpg,7z.</li>
 </ul>
 </li>
-<li><strong>SEVENZIP</strong> (yes&#124;<strong>no</strong>): create .7z archive with extreme compression ratio instead of .zip</li>
-<li><strong>BUILD_KSRC</strong> (<strong>yes</strong>&#124;no): create kernel source packages </li>
-<li><strong>ROOTFS_TYPE</strong> (<strong>ext4</strong>&#124;f2fs&#124;btrfs&#124;nfs&#124;fel): create image with different root filesystems instead of default ext4. Requires setting <code>FIXED_IMAGE_SIZE</code> to something smaller than the size of your SD card for F2FS</li>
+<li><strong>SEVENZIP</strong> (yes|<strong>no</strong>): create .7z archive with extreme compression ratio instead of .zip</li>
+<li><strong>BUILD_KSRC</strong> (<strong>yes</strong>|no): create kernel source packages </li>
+<li><strong>ROOTFS_TYPE</strong> (<strong>ext4</strong>|f2fs|btrfs|nfs|fel): create image with different root filesystems instead of default ext4. Requires setting <code>FIXED_IMAGE_SIZE</code> to something smaller than the size of your SD card for F2FS</li>
 <li><strong>BTRFS_COMPRESSION</strong> (<strong>lzo</strong>|zlib:3|zstd) select btrfs filesystem compression method and compression level. By default the compression is <code>lzo</code>, user must ensure kernel version is above <code>4.14</code> when selecting <code>zstd</code> or setting zlib compression level(<code>zlib:[1-9]</code>). Both the host and the target kernel version must above <code>5.1</code> when selecting zstd compression level (<code>zstd:[1-15]</code>), since kernel start supporting zstd compression ratio from <code>5.1</code>. The script does not check the legality of input variable(compression ratio), input like <code>zlib:1234</code> is legal to script, but illegal to kernel. When using microsd card, <code>zstd</code> is preferred because of the poor 4k I/O performance of microsd card.</li>
-<li><strong>FORCE_BOOTSCRIPT_UPDATE</strong> (yes&#124;no): set to &ldquo;yes&rdquo; to force bootscript to get updated during bsp package upgrade</li>
+<li><strong>FORCE_BOOTSCRIPT_UPDATE</strong> (yes|no): set to “yes” to force bootscript to get updated during bsp package upgrade</li>
 <li><strong>NAMESERVER</strong> (ipv4 address): the DNS resolver used inside the build chroot. Does not affect the final image. Default: 1.0.0.1</li>
 <li><strong>DOWNLOAD_MIRROR</strong> select download mirror for <code>toolchain</code> and <code>debian/ubuntu packages</code>.<ul>
 <li>set to <code>china</code> to use <code>mirrors.tuna.tsinghua.edu.cn</code>, it will be very fast thanks to tsinghua university.</li>
@@ -289,60 +257,39 @@
 <li>leave it empty to use offical <code>git.kernel.org</code>, it may be very slow for mainland china users.</li>
 </ul>
 </li>
-<li><strong>USE_TORRENT</strong> (<strong>yes</strong>&#124;no): use torrent to download toolchains and rootfs</li>
+<li><strong>USE_TORRENT</strong> (<strong>yes</strong>|no): use torrent to download toolchains and rootfs</li>
 <li><strong>ROOT_FS_CREATE_ONLY</strong> set to <code>FORCE</code> to skip rootfs download and create locally</li>
 </ul>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Developer-Guide_User-Configurations/" class="btn btn-neutral float-right" title="User Configurations">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Developer-Guide_Building-with-Docker/" class="btn btn-neutral" title="Building with Docker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../Developer-Guide_User-Configurations/" title="User Configurations">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../Developer-Guide_Building-with-Docker/" title="Building with Docker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../Developer-Guide_Building-with-Docker/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../Developer-Guide_User-Configurations/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../Developer-Guide_Building-with-Docker/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../Developer-Guide_User-Configurations/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

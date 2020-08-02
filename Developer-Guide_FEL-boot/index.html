@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>FEL boot - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>FEL boot - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "FEL boot";
     var mkdocs_page_input_path = "Developer-Guide_FEL-boot.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,165 +32,138 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">FEL boot</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#what-is-felnfs-boot">What is FEL/NFS boot?</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#additional-requirements-recommended">Additional requirements (recommended)</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#build-script-options">Build script options</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#shutdown-and-reboot">Shutdown and reboot</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#advanced-configuration">Advanced configuration</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#customization">Customization</a>
-    </li>
-    </ul>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Developer Guide &raquo;</li>
-        
-      
-    
-    <li>FEL boot</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/Developer-Guide_FEL-boot.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="./">FEL boot</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#what-is-felnfs-boot">What is FEL/NFS boot?</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#additional-requirements-recommended">Additional requirements (recommended)</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#build-script-options">Build script options</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#shutdown-and-reboot">Shutdown and reboot</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-configuration">Advanced configuration</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#customization">Customization</a>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="felnfs-boot-explanation">FEL/NFS boot explanation<a class="headerlink" href="#felnfs-boot-explanation" title="Permanent link">&para;</a></h1>
-<h3 id="what-is-felnfs-boot">What is FEL/NFS boot?<a class="headerlink" href="#what-is-felnfs-boot" title="Permanent link">&para;</a></h3>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Developer Guide »</li>
+<li>FEL boot</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/Developer-Guide_FEL-boot.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="felnfs-boot-explanation">FEL/NFS boot explanation<a class="headerlink" href="#felnfs-boot-explanation" title="Permanent link">¶</a></h1>
+<h3 id="what-is-felnfs-boot">What is FEL/NFS boot?<a class="headerlink" href="#what-is-felnfs-boot" title="Permanent link">¶</a></h3>
 <p>FEL/NFS boot mode is a possibility to test freshly created Armbian distribution without using SD card. It is implemented by loading u-boot, kernel, initrd, boot script and .bin/.dtb file via <a href="https://linux-sunxi.org/FEL/USBBoot">USB FEL mode</a> and providing root filesystem via NFS share.</p>
 <p>NOTE: this mode is designed only for testing. To use root on NFS permanently, use <code>ROOTFS_TYPE=nfs</code> option.
-NOTE: &ldquo;hot&rdquo; switching between kernel branches (default &lt;-&gt; dev/next) is not supported</p>
-<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
+NOTE: “hot” switching between kernel branches (default &lt;-&gt; dev/next) is not supported</p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">¶</a></h3>
 <ul>
 <li>Allwinner device that supports FEL mode. Check <a href="https://linux-sunxi.org/FEL">wiki</a> to find out how to enter FEL mode with your device</li>
 <li>USB connection between build host and board OTG port (VM USB passthrough or USB over IP may work too)</li>
@@ -204,12 +172,12 @@ NOTE: &ldquo;hot&rdquo; switching between kernel branches (default &lt;-&gt; dev
 <li>Selected kernel should have built-in support for DHCP and NFS root filesystem</li>
 <li><code>CLEAN_LEVEL="make,debs"</code> to always update u-boot configuration</li>
 </ul>
-<h4 id="additional-requirements-recommended">Additional requirements (recommended)<a class="headerlink" href="#additional-requirements-recommended" title="Permanent link">&para;</a></h4>
+<h4 id="additional-requirements-recommended">Additional requirements (recommended)<a class="headerlink" href="#additional-requirements-recommended" title="Permanent link">¶</a></h4>
 <ul>
 <li>DHCP server in local network</li>
 <li>UART console connected to target board</li>
 </ul>
-<h3 id="build-script-options">Build script options<a class="headerlink" href="#build-script-options" title="Permanent link">&para;</a></h3>
+<h3 id="build-script-options">Build script options<a class="headerlink" href="#build-script-options" title="Permanent link">¶</a></h3>
 <ul>
 <li>KERNEL_ONLY=no</li>
 <li>ROOTFS_TYPE=fel</li>
@@ -217,78 +185,55 @@ NOTE: &ldquo;hot&rdquo; switching between kernel branches (default &lt;-&gt; dev
 <p>Example:</p>
 <pre><code>./compile.sh KERNEL_ONLY=no BOARD=cubietruck BRANCH=current PROGRESS_DISPLAY=plain RELEASE=jessie BUILD_DESKTOP=no ROOTFS_TYPE=fel
 </code></pre>
-
-<h3 id="shutdown-and-reboot">Shutdown and reboot<a class="headerlink" href="#shutdown-and-reboot" title="Permanent link">&para;</a></h3>
+<h3 id="shutdown-and-reboot">Shutdown and reboot<a class="headerlink" href="#shutdown-and-reboot" title="Permanent link">¶</a></h3>
 <p>Once you start FEL boot, you will see this prompt:</p>
 <pre><code>[ o.k. ] Press any key to boot again, &lt;q&gt; to finish [ FEL ]
 </code></pre>
-
 <p>Pressing <code>q</code> deletes current rootfs and finishes build process, so you need to shut down or reboot your board to avoid possible problems unmounting/deleting temporary rootfs. All changes to root filesystem will persist until you exit FEL mode.</p>
 <p>To reboot again into testing system, switch your board into FEL mode and press any key other than <code>q</code>.</p>
-<p>Because kernel and .bin/.dtb file are loaded from rootfs each time, it&rsquo;s possible to update kernel or its configuration (via <code>apt-get</code>, <code>dtc</code>, <code>fex2bin</code>/<code>bin2fex</code>) from within running system.</p>
-<h3 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h3>
-<p>If you don&rsquo;t have DHCP server in your local network or if you need to alter kernel command line, use <code>lib/scripts/fel-boot.cmd.template</code> as a template and save modified script as <code>userpatches/fel-boot.cmd</code>. Check <a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/Documentation/filesystems/nfs/nfsroot.txt">this</a> for configuring static IP for NFS root</p>
-<p>Set <code>FEL_DTB_FILE</code> to relative path to .dtb or .bin file if it can&rsquo;t be obtained from u-boot config (mainline kernel) or boot/script.bin (legacy kernel)</p>
-<p>You may need to set these additional options (it&rsquo;s a good idea to put them in <code>userpatches/lib.config</code>:</p>
+<p>Because kernel and .bin/.dtb file are loaded from rootfs each time, it’s possible to update kernel or its configuration (via <code>apt-get</code>, <code>dtc</code>, <code>fex2bin</code>/<code>bin2fex</code>) from within running system.</p>
+<h3 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">¶</a></h3>
+<p>If you don’t have DHCP server in your local network or if you need to alter kernel command line, use <code>lib/scripts/fel-boot.cmd.template</code> as a template and save modified script as <code>userpatches/fel-boot.cmd</code>. Check <a href="https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/plain/Documentation/filesystems/nfs/nfsroot.txt">this</a> for configuring static IP for NFS root</p>
+<p>Set <code>FEL_DTB_FILE</code> to relative path to .dtb or .bin file if it can’t be obtained from u-boot config (mainline kernel) or boot/script.bin (legacy kernel)</p>
+<p>You may need to set these additional options (it’s a good idea to put them in <code>userpatches/lib.config</code>:</p>
 <p>Set <code>FEL_NET_IFNAME</code> to name of your network interface if you have more than one non-loopback interface with assigned IPv4 address on your build host</p>
-<p>Set <code>FEL_LOCAL_IP</code> to IP address that can be used to reach NFS server on your build host if it can&rsquo;t be obtained from ifconfig (i.e. port forwarding to VM guest)</p>
+<p>Set <code>FEL_LOCAL_IP</code> to IP address that can be used to reach NFS server on your build host if it can’t be obtained from ifconfig (i.e. port forwarding to VM guest)</p>
 <p>Set <code>FEL_AUTO=yes</code> to skip prompt before trying FEL load</p>
-<h3 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h3>
+<h3 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">¶</a></h3>
 <p>You can even create <code>userpatches/fel-hooks.sh</code> and define there 2 functions: <code>fel_post_prepare</code> and <code>fel_pre_load</code>. All normal build variables like $BOARD, $BRANCH and so on can be used in these functions to define specific actions.</p>
 <p><code>fel_post_prepare</code> is executed once after setting up u-boot script and NFS share, you can use it to add extra stuff to boot.scr (like <code>gpio set</code> or <code>setenv machid</code>) based on device name.</p>
 <p><code>fel_pre_load</code> is executed before calling sunxi-fel, you can use it to implement logic to select one of multiple connected boards; to pass additional arguments to <code>sunxi-fel</code> you can use <code>FEL_EXTRA_ARGS</code> variable.</p>
 <p>An example is provided as <code>scripts/fel-hooks.sh.example</code>.</p>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Process_Contribute/" class="btn btn-neutral float-right" title="Contribute">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Developer-Guide_User-Configurations/" class="btn btn-neutral" title="User Configurations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../Process_Contribute/" title="Contribute">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../Developer-Guide_User-Configurations/" title="User Configurations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../Developer-Guide_User-Configurations/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../Process_Contribute/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../Developer-Guide_User-Configurations/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../Process_Contribute/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

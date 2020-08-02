@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Allwinner (Generic) - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Allwinner (Generic) - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Allwinner (Generic)";
     var mkdocs_page_input_path = "Hardware_Allwinner.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,155 +32,128 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Allwinner (Generic)</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Hardware Notes &raquo;</li>
-        
-      
-    
-    <li>Allwinner (Generic)</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/Hardware_Allwinner.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Allwinner (Generic)</a>
+<ul class="current">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="enable-hardware-features">Enable Hardware Features<a class="headerlink" href="#enable-hardware-features" title="Permanent link">&para;</a></h1>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Hardware Notes »</li>
+<li>Allwinner (Generic)</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/Hardware_Allwinner.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="enable-hardware-features">Enable Hardware Features<a class="headerlink" href="#enable-hardware-features" title="Permanent link">¶</a></h1>
 <p>Some boards require some manual configuration to turn on/off certain features</p>
-<p>In some cases, the procedure is &ldquo;less than obvious&rdquo;, so we document some basic examples here.</p>
-<h1 id="generic-howto-for-allwinner-devices">Generic howto for Allwinner devices<a class="headerlink" href="#generic-howto-for-allwinner-devices" title="Permanent link">&para;</a></h1>
-<h2 id="legacy-or-current-kernel">Legacy or current kernel ?<a class="headerlink" href="#legacy-or-current-kernel" title="Permanent link">&para;</a></h2>
+<p>In some cases, the procedure is “less than obvious”, so we document some basic examples here.</p>
+<h1 id="generic-howto-for-allwinner-devices">Generic howto for Allwinner devices<a class="headerlink" href="#generic-howto-for-allwinner-devices" title="Permanent link">¶</a></h1>
+<h2 id="legacy-or-current-kernel">Legacy or current kernel ?<a class="headerlink" href="#legacy-or-current-kernel" title="Permanent link">¶</a></h2>
 <p>Many Armbian images come in two flavours : <em>Legacy</em> (using an older kernel version) and <em>current</em> (up-to-date LTS kernel). Depending on kernel version, the procedure to enable/disable features is not the same.</p>
 <ul>
 <li><em>Legacy</em> kernel (4.19.x): DT (Device Tree) overlays</li>
 <li><em>Current</em> kernel (5.4.x) : DT (Device Tree) overlays</li>
 </ul>
 <p><strong>Note:</strong> Support for older kernel versiones (like 3.4.x or 3.10.x) has been dropped.</p>
-<h2 id="how-to-reconfigure-video-output">How to reconfigure video output?<a class="headerlink" href="#how-to-reconfigure-video-output" title="Permanent link">&para;</a></h2>
+<h2 id="how-to-reconfigure-video-output">How to reconfigure video output?<a class="headerlink" href="#how-to-reconfigure-video-output" title="Permanent link">¶</a></h2>
 <p>This affect <em>current</em> kernel only.</p>
 <p>U-Boot supports HDMI and LCD output on Allwinner sunxi SoCs, LCD output requires the <code>CONFIG_VIDEO_LCD_MODE</code> Kconfig value to be set.</p>
 <p>The sunxi U-Boot driver supports the following video-mode options:</p>
@@ -227,51 +195,43 @@
 </ul>
 <p>For example to always use the HDMI connector, even if no cable is inserted, using edid info when available and otherwise initalizing it at 1024x768@60Hz, use: <code>setenv video-mode sunxi:1024x768-24@60,monitor=dvi,hpd=0,edid=0</code>.</p>
 <p>Parameters regarding video must be saved into U-Boot environment file since they must be read before reading boot script. You can do this by adding <code>saveenv</code> command at the end of boot script (boot.cmd). Remember to recompile boot.cmd to boot.scr and note that changes will come into action after second boot. </p>
-<h2 id="what-flavour-am-i-using">What flavour am I using ?<a class="headerlink" href="#what-flavour-am-i-using" title="Permanent link">&para;</a></h2>
+<h2 id="what-flavour-am-i-using">What flavour am I using ?<a class="headerlink" href="#what-flavour-am-i-using" title="Permanent link">¶</a></h2>
 <p>Best way to know is by checking your kernel version :</p>
 <pre><code>root@bananapipro:~# uname -a
 Linux bananapipro 4.5.2-sunxi #11 SMP Thu Apr 28 21:53:25 CEST 2016 armv7l GNU/Linux
 </code></pre>
-
-<p>In this example the kernel version is 4.5.2 so you can use DT to tweak some settings. If you get a kernel version 3.X then you&rsquo;ll be certainly using FEX like on an Orange Pi Plus 2E :</p>
+<p>In this example the kernel version is 4.5.2 so you can use DT to tweak some settings. If you get a kernel version 3.X then you’ll be certainly using FEX like on an Orange Pi Plus 2E :</p>
 <pre><code>root@orangepiplus2e:~# uname -a
 Linux orangepiplus2e 3.4.112-sun8i #10 SMP PREEMPT Wed Jun 1 19:43:08 CEST 2016 armv7l GNU/Linux
 </code></pre>
-
-<h2 id="fex-outdatedunsupported-informational-only">FEX (outdated/unsupported, informational only)<a class="headerlink" href="#fex-outdatedunsupported-informational-only" title="Permanent link">&para;</a></h2>
-<h3 id="which-file-should-i-edit">Which file should I edit<a class="headerlink" href="#which-file-should-i-edit" title="Permanent link">&para;</a></h3>
+<h2 id="fex-outdatedunsupported-informational-only">FEX (outdated/unsupported, informational only)<a class="headerlink" href="#fex-outdatedunsupported-informational-only" title="Permanent link">¶</a></h2>
+<h3 id="which-file-should-i-edit">Which file should I edit<a class="headerlink" href="#which-file-should-i-edit" title="Permanent link">¶</a></h3>
 <p>Armbian embed a lot of BIN files, but a symlink point to the one in use :</p>
 <pre><code>root@orangepiplus2e:~# ls -la /boot/script.bin
 lrwxrwxrwx 1 root root 22 Jun  1 20:30 /boot/script.bin -&gt; bin/orangepiplus2e.bin
 </code></pre>
-
-<h3 id="updating-a-fex">Updating a FEX<a class="headerlink" href="#updating-a-fex" title="Permanent link">&para;</a></h3>
+<h3 id="updating-a-fex">Updating a FEX<a class="headerlink" href="#updating-a-fex" title="Permanent link">¶</a></h3>
 <p>You may need to use <code>sudo</code> with all the following commands.</p>
-<p>The whole process won&rsquo;t overwrite any of your files. If you&rsquo;re paranoid, you can make a proper backup of your BIN file :</p>
+<p>The whole process won’t overwrite any of your files. If you’re paranoid, you can make a proper backup of your BIN file :</p>
 <pre><code>cp /boot/script.bin /boot/bin/script.bin.backup
 </code></pre>
-
 <p>Then you can decompile your BIN into a FEX :</p>
 <pre><code>bin2fex /boot/script.bin /tmp/custom.fex
 </code></pre>
-
 <p>Finally you can edit your FEX file with your favorite text editor and compile it back to a BIN :</p>
 <pre><code>fex2bin /tmp/custom.fex /boot/bin/custom.bin
 </code></pre>
-
 <p>The last step is to change the symlink to use your custom BIN :</p>
 <pre><code>ln -sf /boot/bin/custom.bin /boot/script.bin
 </code></pre>
-
-<h1 id="h3-based-orange-pi-legacy-kernel">H3 based Orange Pi, legacy kernel<a class="headerlink" href="#h3-based-orange-pi-legacy-kernel" title="Permanent link">&para;</a></h1>
-<h2 id="enable-serial-devttys3-on-pins-8-and-10-of-the-40-pin-header">Enable serial /dev/ttyS3 on pins 8 and 10 of the 40 pin header<a class="headerlink" href="#enable-serial-devttys3-on-pins-8-and-10-of-the-40-pin-header" title="Permanent link">&para;</a></h2>
+<h1 id="h3-based-orange-pi-legacy-kernel">H3 based Orange Pi, legacy kernel<a class="headerlink" href="#h3-based-orange-pi-legacy-kernel" title="Permanent link">¶</a></h1>
+<h2 id="enable-serial-devttys3-on-pins-8-and-10-of-the-40-pin-header">Enable serial /dev/ttyS3 on pins 8 and 10 of the 40 pin header<a class="headerlink" href="#enable-serial-devttys3-on-pins-8-and-10-of-the-40-pin-header" title="Permanent link">¶</a></h2>
 <p>Update the FEX configuration (which is compiled into a .bin) located at /boot/script.bin</p>
 <p>Decompile .bin to .fex</p>
 <pre><code>cd /boot
 bin2fex script.bin &gt; custom.fex
 rm script.bin # only removes symbolic link
 </code></pre>
-
 <p>Edit .fex file</p>
 <pre><code>[uart3]
 uart_used = 1 ; Change from 0 to 1
@@ -280,20 +240,18 @@ uart_type = 2 ; In this case we have a 2 pin UART
 uart_tx = port:PA13&lt;3&gt;&lt;1&gt;&lt;default&gt;&lt;default&gt;
 uart_rx = port:PA14&lt;3&gt;&lt;1&gt;&lt;default&gt;&lt;default&gt;
 </code></pre>
-
 <p>Compile .fex to .bin</p>
 <pre><code>fex2bin custom.fex &gt; script.bin
 </code></pre>
-
 <p>Reboot</p>
 <p>Notice that /dev/ttyS3 appears. That is your new UART device.</p>
-<h2 id="connect-your-lcd-display">Connect your LCD display<a class="headerlink" href="#connect-your-lcd-display" title="Permanent link">&para;</a></h2>
+<h2 id="connect-your-lcd-display">Connect your LCD display<a class="headerlink" href="#connect-your-lcd-display" title="Permanent link">¶</a></h2>
 <p>I tried three different display connection types: I2C, (4bit) parallel and SPI. All of them are working perfectly with my image. I didn’t took a picture of the third one. It’s a standard Hitachi HD44780 based 20×4 LCD, wired and tested <a href="https://github.com/LeMaker/WiringBPi">according to Wiring(B)PI example</a>.</p>
 <p>I2C</p>
-<p><img alt="" src="http://www.igorpecovnik.com/wp-content/uploads/2014/09/banana-i2c-display1.jpg" /></p>
+<p><img alt="" src="http://www.igorpecovnik.com/wp-content/uploads/2014/09/banana-i2c-display1.jpg"/></p>
 <p>I am using <a href="https://github.com/vvromanov/cb_i2c_lcd">this code</a> for mainline kernel and with <a href="https://github.com/vvromanov/cb_i2c_lcd/blob/master/i2c_lcd.c#L28">changed line</a>: /dev/i2c-%u = /dev/i2c-2 for Legacy kernel.</p>
 <p>SPI</p>
-<p><img alt="" src="http://www.igorpecovnik.com/wp-content/uploads/2014/09/banana-spi-display.jpg" /></p>
+<p><img alt="" src="http://www.igorpecovnik.com/wp-content/uploads/2014/09/banana-spi-display.jpg"/></p>
 <ul>
 <li>I am using <a href="http://www.google.com/search?q=2.4%E2%80%B3+240%C3%97320+SPI+TFT+LCD+Serial+Port+Module%2B5%2F3.3V+Pbc+Adapter+Micro+SD+ILI9341&amp;oq=2.4%E2%80%B3+240%C3%97320+SPI+TFT+LCD+Serial+Port+Module%2B5%2F3.3V+Pbc+Adapter+Micro+SD+ILI9341">2.4″ 240×320 SPI TFT LCD Serial Port Module+5/3.3V Pbc Adapter Micro SD ILI9341</a></li>
 <li>Wire according to <a href="http://blog.riyas.org/2014/07/quickly-test-il9341-22-inch-22-spi-tft-raspbmc-fbtft.html">this map</a>.</li>
@@ -306,7 +264,7 @@ uart_rx = port:PA14&lt;3&gt;&lt;1&gt;&lt;default&gt;&lt;default&gt;
 <li><a href="https://github.com/notro/fbtft/wiki">Troubleshooting and settings for other displays
 LVDS</a></li>
 </ul>
-<p><img alt="" src="http://www.armbian.com/wp-content/uploads/2015/09/lvdsbanana.png" /></p>
+<p><img alt="" src="http://www.armbian.com/wp-content/uploads/2015/09/lvdsbanana.png"/></p>
 <p>Currently working only under Legacy kernel.</p>
 <p>Image has pre-loaded settings for two LVDS display.</p>
 <p>To enable 7 inch.</p>
@@ -315,57 +273,36 @@ LVDS</a></li>
 <p><code>ln -sf /boot/bin/bananapilcd5.bin /boot/script.bin</code></p>
 <p>If you need touch screen support, add this module to your /etc/modules</p>
 <p><code>ft5x_ts</code></p>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Hardware_Allwinner-A20/" class="btn btn-neutral float-right" title="A10 and A20">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../User-Guide_Migration_from_Bananian/" class="btn btn-neutral" title="Migration from Bananian"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../Hardware_Allwinner-A20/" title="A10 and A20">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../User-Guide_Migration_from_Bananian/" title="Migration from Bananian"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../User-Guide_Migration_from_Bananian/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../Hardware_Allwinner-A20/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../User-Guide_Migration_from_Bananian/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../Hardware_Allwinner-A20/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Pine64 - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../../css/theme.css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../../img/favicon.ico" rel="shortcut icon"/>
+<title>Pine64 - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet"/>
+<link href="../../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Pine64";
     var mkdocs_page_input_path = "board_details/pine64.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,150 +32,126 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href="../.."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="../..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>Pine64</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/board_details/pine64.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <ul>
-<li><strong>Important</strong>: A few Pine64+ devices suffer from a Gbit Ethernet issue related to the GbE PHY leading to a severe amount of packet losses which might render Ethernet unuseable. It&rsquo;s confirmed as <a href="http://forum.pine64.org/showthread.php?tid=835&amp;pid=19773#pid19773">hardware issue</a> and if you&rsquo;re affected or not can be simply checked by testing network throughput with <em>iperf3</em>. Against another GbE capable device you should exceed 900 Mbits/sec with Armbian (only 800 Mbits/sec in RX direction when not using Xenial due to <a href="https://forum.armbian.com/topic/1917-armbian-running-on-pine64-and-other-a64h5-devices/?p=14673">iperf3 being single-threaded in both directions then and bottlenecked by CPU</a>). If you see low throughput and high retransmit counts then a work-around is to switch Pine64+ to Fast Ethernet only by adding <code>ethtool -s eth0 speed 100 duplex full</code> to <code>/etc/rc.local</code>. At the time of this writing a true fix is only replacing the defective board by Pine Microsystems Inc.</li>
-<li>The only led on the board is a power led, it starts to light as soon as power is available and does not indicate anything else. So the only &lsquo;DOA or not?&rsquo; indicator on this board is to burn an image, connect Ethernet, power on the board and wait 20 seconds whether the leds on the Ethernet jack show activity or not.</li>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="../..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="../..">Docs</a> »</li>
+<li>Pine64</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/board_details/pine64.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<ul>
+<li><strong>Important</strong>: A few Pine64+ devices suffer from a Gbit Ethernet issue related to the GbE PHY leading to a severe amount of packet losses which might render Ethernet unuseable. It’s confirmed as <a href="http://forum.pine64.org/showthread.php?tid=835&amp;pid=19773#pid19773">hardware issue</a> and if you’re affected or not can be simply checked by testing network throughput with <em>iperf3</em>. Against another GbE capable device you should exceed 900 Mbits/sec with Armbian (only 800 Mbits/sec in RX direction when not using Xenial due to <a href="https://forum.armbian.com/topic/1917-armbian-running-on-pine64-and-other-a64h5-devices/?p=14673">iperf3 being single-threaded in both directions then and bottlenecked by CPU</a>). If you see low throughput and high retransmit counts then a work-around is to switch Pine64+ to Fast Ethernet only by adding <code>ethtool -s eth0 speed 100 duplex full</code> to <code>/etc/rc.local</code>. At the time of this writing a true fix is only replacing the defective board by Pine Microsystems Inc.</li>
+<li>The only led on the board is a power led, it starts to light as soon as power is available and does not indicate anything else. So the only ‘DOA or not?’ indicator on this board is to burn an image, connect Ethernet, power on the board and wait 20 seconds whether the leds on the Ethernet jack show activity or not.</li>
 <li>Comprehensive device information is available <a href="http://linux-sunxi.org/Pine64">in linux-sunxi wiki</a>.</li>
-<li>Idle consumption with legacy image is ~1500 mW on Pine64 (or Pine64+ forced to use Fast Ethernet) and 1870 mW on Pine64+ (if you don&rsquo;t need GbE network transfer speeds switching to Fast Ethernet with <code>ethtool -s eth0 speed 100 duplex full</code> saves ~350 mW).</li>
-<li>Since the default DC-IN connector unfortunately is made with a Micro USB jack it&rsquo;s important to keep in mind that most USB cables have a resistance way too high which leads to undervoltage situations. In case you run into stability problems please power your Pine64(+) through the Euler pins (see <a href="http://linux-sunxi.org/File:Pine64_Powered_through_Euler_Connector.jpg">linux-sunxi wiki</a> for details).</li>
+<li>Idle consumption with legacy image is ~1500 mW on Pine64 (or Pine64+ forced to use Fast Ethernet) and 1870 mW on Pine64+ (if you don’t need GbE network transfer speeds switching to Fast Ethernet with <code>ethtool -s eth0 speed 100 duplex full</code> saves ~350 mW).</li>
+<li>Since the default DC-IN connector unfortunately is made with a Micro USB jack it’s important to keep in mind that most USB cables have a resistance way too high which leads to undervoltage situations. In case you run into stability problems please power your Pine64(+) through the Euler pins (see <a href="http://linux-sunxi.org/File:Pine64_Powered_through_Euler_Connector.jpg">linux-sunxi wiki</a> for details).</li>
 <li>If you clone one Armbian installation for more than one Pine64 please keep in mind that currently the Ethernet MAC address will be chosen randomly on first boot and then saved in <code>/boot/uEnv.txt</code>. To avoid MAC address collisions you must adjust the address there or delete the whole <code>ethaddr</code> line (next boot will <a href="https://github.com/igorpecovnik/lib/blob/54070358c28d5e88f14305f2e8d179875e5b2e5e/scripts/firstrun#L411-L414">assign a new MAC address automagically</a>). OS images from Aug 2016 or before suffer from <a href="https://github.com/longsleep/linux-pine64/commit/58636d53c21e1ee31e98bb971ebf95ebf44d6f2a">this bug</a> so <code>/boot/uEnv.txt</code> has to be adjusted manually in any case if more than one Pine64 joins the same Ethernet network.</li>
-<li>Even if HDMI situation is still somewhat limited Armbian starting with release 5.21 supports setting the default resolution in <code>/boot/armbianEnv.txt</code> (defaults to <code>720p60</code> and could be changed to 4K@30Hz for example with an entry <code>disp_mode=2160p30</code> &ndash; for the list of supported resolutions please have a look into <code>/boot/boot.cmd</code>)</li>
-<li>If you use a DVI display don&rsquo;t forget to define <code>disp_dvi_compat=1</code> in <code>/boot/armbianEnv.txt</code> (supported starting with 5.21).</li>
+<li>Even if HDMI situation is still somewhat limited Armbian starting with release 5.21 supports setting the default resolution in <code>/boot/armbianEnv.txt</code> (defaults to <code>720p60</code> and could be changed to 4K@30Hz for example with an entry <code>disp_mode=2160p30</code> – for the list of supported resolutions please have a look into <code>/boot/boot.cmd</code>)</li>
+<li>If you use a DVI display don’t forget to define <code>disp_dvi_compat=1</code> in <code>/boot/armbianEnv.txt</code> (supported starting with 5.21).</li>
 <li>If you want to run heavy loads on Pine64 please keep in mind that you might need a heatsink to prevent throttling. Armbian uses community throttling settings that protect A64 SoC from overheating but without improved heat dissipation any heavy workload running longer than 60 seconds will result in CPU cores being clocked down to stay below 90°C SoC temperature.</li>
 <li>Situation with mainline kernel can be considered experimental. At the moment only basic functionality is implemented and <strong>no</strong> thermal protection (throttling) is working (no cpufreq scaling also and no access to PMIC too). Therefore also pretty conservative settings are used which negatively impact performance.</li>
-<li>In case you use mainline kernel already you can adjust cpufreq to 864 MHz for example by adding a line with <code>mw.l 0x1c20000 0x80001110</code> to <code>/boot/boot.cmd</code> (don&rsquo;t exceed 864 MHz now since <a href="http://linux-sunxi.org/Pine64#CPU_clock_speed_limit">VDD_CPUX is currently limited to 1.1V</a>). By defining <code>mw.l 0x1c2005c 1</code> on a separate line you can speed up USB and Ethernet &ndash; <a href="https://forum.armbian.com/topic/1917-armbian-running-on-pine64-and-other-a64h5-devices/?p=15225">Reference</a>).</li>
-<li>It&rsquo;s possible to convert the upper USB port (normally an OTG port) into a full USB host port using an own PHY by setting some <a href="https://irclog.whitequark.org/linux-sunxi/2016-09-06#17478535;">magic bits</a>.</li>
+<li>In case you use mainline kernel already you can adjust cpufreq to 864 MHz for example by adding a line with <code>mw.l 0x1c20000 0x80001110</code> to <code>/boot/boot.cmd</code> (don’t exceed 864 MHz now since <a href="http://linux-sunxi.org/Pine64#CPU_clock_speed_limit">VDD_CPUX is currently limited to 1.1V</a>). By defining <code>mw.l 0x1c2005c 1</code> on a separate line you can speed up USB and Ethernet – <a href="https://forum.armbian.com/topic/1917-armbian-running-on-pine64-and-other-a64h5-devices/?p=15225">Reference</a>).</li>
+<li>It’s possible to convert the upper USB port (normally an OTG port) into a full USB host port using an own PHY by setting some <a href="https://irclog.whitequark.org/linux-sunxi/2016-09-06#17478535;">magic bits</a>.</li>
 <li>To use/configure Wi-Fi (currently only supported with legacy images) the most simple way is to use <code>NetworkManager</code>. Simply follow these steps (as root): </li>
 <li><code>echo "blacklist 8723bs_vq0" &gt;/etc/modprobe.d/8723bs_vq0.conf</code> (optional, not really necessary)</li>
 <li><code>sed -i 's/p2p0/p2p0,wlan1/' /etc/NetworkManager/NetworkManager.conf</code> (optional, not really necessary)</li>
@@ -189,47 +160,33 @@
 <li>Starting with <a href="https://github.com/igorpecovnik/lib/commit/04e6a4d76ad71a9f2117ae8b07c41617bfcb1eae">Armbian 5.21</a> fixed camera drivers for both SK54EC and OV5640 are included.</li>
 <li>Currently BT is not supported out of the box by Armbian. Please read through <a href="http://forum.pine64.org/showthread.php?tid=2248&amp;pid=21412#pid21412">this thread in pine64 forum</a> to enable it.</li>
 <li>Starting with Armbian 5.24 in <code>/boot/armbianEnv.txt</code> camera support can be activated: <code>camera_type=none|s5k4ec|ov5640</code> (defaults to <code>none</code>, reboot needed for changes to take effect)</li>
-<li>Also starting with 5.24 Pine64&rsquo;s own LCD with touchscreen support can simply be activated in <code>/boot/armbianEnv.txt</code> by setting <code>pine64_lcd=on</code> and adding <code>gt9xxf_ts</code> to <code>/etc/modules</code> followed by a reboot. Please note that current <code>gt9xxf_ts</code> driver seems to be buggy and crashes on shutdown.</li>
+<li>Also starting with 5.24 Pine64’s own LCD with touchscreen support can simply be activated in <code>/boot/armbianEnv.txt</code> by setting <code>pine64_lcd=on</code> and adding <code>gt9xxf_ts</code> to <code>/etc/modules</code> followed by a reboot. Please note that current <code>gt9xxf_ts</code> driver seems to be buggy and crashes on shutdown.</li>
 <li>Starting with 5.25 in <code>/boot/armbianEnv.txt</code> two more parameters can be set: <code>gmac-tx-delay</code> (defaults to <code>3</code>) and <code>gmac-rx-delay</code> (defaults to <code>0</code>). Adjusting this parameters should not be necessary but in case you are curious or experience bad Gigabit Ethernet performance please read through <a href="https://github.com/igorpecovnik/lib/issues/546">the appropriate github issue</a>.</li>
 </ul>
-              
-            </div>
-          </div>
-          <footer>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-      
-    </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+</span>
+</div>
+<script>var base_url = '../..';</script>
+<script defer="" src="../../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Model - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Model - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Model";
     var mkdocs_page_input_path = "Process_Release-Model.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,154 +32,127 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul class="current">
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Model</a>
-    <ul class="current">
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>Release management &raquo;</li>
-        
-      
-    
-    <li>Model</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/Process_Release-Model.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Allwinner_overlays/">Allwinner DT overlays</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Model</a>
+<ul class="current">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="release-model">Release model<a class="headerlink" href="#release-model" title="Permanent link">&para;</a></h1>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Release management »</li>
+<li>Model</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/Process_Release-Model.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="release-model">Release model<a class="headerlink" href="#release-model" title="Permanent link">¶</a></h1>
 <p><strong>Release Dates</strong></p>
-<p>Armbian runs &ldquo;train&rdquo; based releases. Whatever is ready to board the train, does so. Whatever isn&rsquo;t ready, has to wait for the next train. This enables us to have a predictable release cycles making it easy to plan. It also puts the responsibility on developers to make sure they have features ready on time. </p>
+<p>Armbian runs “train” based releases. Whatever is ready to board the train, does so. Whatever isn’t ready, has to wait for the next train. This enables us to have a predictable release cycles making it easy to plan. It also puts the responsibility on developers to make sure they have features ready on time. </p>
 <p>Armbian releases quarterly at the end of <strong>February, May, August, November</strong>. Offset is because we all know that nothing happens for half of December. At the beginning of a release cycle, we have a planning meeting and <strong>two weeks before the end of the release we freeze integration of new features</strong>.</p>
 <p><strong>Release Cycle</strong></p>
-<p>Releases last 3 months. Each release starts with a planning meeting. After planning, developers and development teams build their deliverable using whatever methods (scrum, kanban, waterfall, &hellip; ) they want but shall commit their code frequently, leading <strong>up to the last 2 weeks</strong>. The project does not accept &ldquo;dumps&rdquo; of code at the end. <strong>Commit early and often</strong> on master. Two weeks before the release date, we halt feature integration and only allow bug fixes. At some point during those two weeks, we start the release candidate process. This process starts by pulling a branch off master that will become the release branch. That frees up master for development on the next release. On the release candidate branch we work on bug fixes, and choose &ldquo;release candidate&rdquo;, RC, tags. The software at that tag is a candidate for release, and it is submitted to automated and manual tests on real hardware. If automated tests are passing, we can officially tag it as the release. If it doesn&rsquo;t, we enter another bug fix cycle and create a new release candidate. We iterate until we have a candidate that can be the formal release. Usually, this takes 2-3 cycles and 1-3 weeks of time.</p>
+<p>Releases last 3 months. Each release starts with a planning meeting. After planning, developers and development teams build their deliverable using whatever methods (scrum, kanban, waterfall, … ) they want but shall commit their code frequently, leading <strong>up to the last 2 weeks</strong>. The project does not accept “dumps” of code at the end. <strong>Commit early and often</strong> on master. Two weeks before the release date, we halt feature integration and only allow bug fixes. At some point during those two weeks, we start the release candidate process. This process starts by pulling a branch off master that will become the release branch. That frees up master for development on the next release. On the release candidate branch we work on bug fixes, and choose “release candidate”, RC, tags. The software at that tag is a candidate for release, and it is submitted to automated and manual tests on real hardware. If automated tests are passing, we can officially tag it as the release. If it doesn’t, we enter another bug fix cycle and create a new release candidate. We iterate until we have a candidate that can be the formal release. Usually, this takes 2-3 cycles and 1-3 weeks of time.</p>
 <p>Development epics, stories and bugs for each release are tracked through <a href="https://armbian.atlassian.net/">Jira</a>.</p>
-<h1 id="release-branching-versioning-and-tags">Release Branching, Versioning and Tags<a class="headerlink" href="#release-branching-versioning-and-tags" title="Permanent link">&para;</a></h1>
+<h1 id="release-branching-versioning-and-tags">Release Branching, Versioning and Tags<a class="headerlink" href="#release-branching-versioning-and-tags" title="Permanent link">¶</a></h1>
 <p>Branches in Armbian follow this convention: </p>
 <ul>
-<li><strong>Master branch (master):</strong> Main development will happen on the master branch. This is the latest and greatest branch, but is always &ldquo;stable&rdquo; and &ldquo;deployable&rdquo;. All tests always pass on this branch.</li>
+<li><strong>Master branch (master):</strong> Main development will happen on the master branch. This is the latest and greatest branch, but is always “stable” and “deployable”. All tests always pass on this branch.</li>
 <li><strong>Maintenance branch (support):</strong> This is the long-term maintenance branch per release.</li>
 <li><strong>Development branch (dev)</strong>: This is a branch created for lengthy and/or involved feature development that could destabilize master.</li>
 </ul>
@@ -192,7 +160,7 @@
 <p><strong>Format:</strong> <code>&lt;major&gt;.&lt;minor&gt;.&lt;revision&gt;</code></p>
 <p><code>&lt;major&gt;</code> and <code>&lt;minor&gt;</code> version will be incremented at the end of the release cycles while <code>&lt;revision&gt;</code> is incremented for a fix (or set of fixes)</p>
 <p>Tags are used in ad-hoc manner.</p>
-<h1 id="release-naming">Release Naming<a class="headerlink" href="#release-naming" title="Permanent link">&para;</a></h1>
+<h1 id="release-naming">Release Naming<a class="headerlink" href="#release-naming" title="Permanent link">¶</a></h1>
 <table>
 <thead>
 <tr>
@@ -236,7 +204,7 @@
 </tbody>
 </table>
 <p>by http://www.codenamegenerator.com/</p>
-<h1 id="release-planning">Release Planning<a class="headerlink" href="#release-planning" title="Permanent link">&para;</a></h1>
+<h1 id="release-planning">Release Planning<a class="headerlink" href="#release-planning" title="Permanent link">¶</a></h1>
 <p>A release planning starts with an public IRC meeting where developers and interested users come together in <strong>first Saturday, one month before the release month</strong>. </p>
 <p>Dates for <strong>2020</strong>: </p>
 <ul>
@@ -255,20 +223,20 @@
 <li>re-prioritise</li>
 <li>cycle open issues and PR on build engine</li>
 <li>board status update on download pages and build engine (wip, supported, eol)</li>
-<li>change (build) branch protection rule to &ldquo;Require pull request reviews before merging&rdquo;</li>
+<li>change (build) branch protection rule to “Require pull request reviews before merging”</li>
 <li>decide upon best meetings hours</li>
 <li>misc / open discussion</li>
 </ul>
 <p>Tips:</p>
 <ul>
-<li>when you got a voice, be concise (1-2 min) and make it clear when you stop. (&ldquo;No more, I&rsquo;m done&rdquo;)</li>
+<li>when you got a voice, be concise (1-2 min) and make it clear when you stop. (“No more, I’m done”)</li>
 <li>channel is recorded so a summary and adjustments to Jira can made afterwards, ideally along with the meeting</li>
 </ul>
 <p>Meeting location is IRC channel <a href="https://webchat.freenode.net/?channels=armbian">#armbian</a> on <a href="https://freenode.net/">freenode</a>. Meeting starts <strong><a href="https://www.thetimezoneconverter.com/?t=14:00&amp;tz=GMT">at 2pm GMT</a></strong>.</p>
-<h1 id="release-coordinating">Release Coordinating<a class="headerlink" href="#release-coordinating" title="Permanent link">&para;</a></h1>
-<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<h1 id="release-coordinating">Release Coordinating<a class="headerlink" href="#release-coordinating" title="Permanent link">¶</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">¶</a></h2>
 <p>A release starts as a RC Branch cut from master at freeze time.  Once a RC Branch is cut, master can be unfrozen and development can continue.  RC Branches accept bug fixes.  The bug fixes should be cherry-picked back to master branch.  Once the RC Is stable. A Final release is made.  A release is <em>never</em> merged to master.  Once a release is complete, it only should be updated for severe bugs and severe security vulnerabilities.  A release is only maintained until the next release.</p>
-<h2 id="1-forum-communication">1. Forum Communication<a class="headerlink" href="#1-forum-communication" title="Permanent link">&para;</a></h2>
+<h2 id="1-forum-communication">1. Forum Communication<a class="headerlink" href="#1-forum-communication" title="Permanent link">¶</a></h2>
 <ul>
 <li>Create a new thread in the <a href="http://forum.armbian.com/forum/12-armbian-build-framework/">Armbian Build Framework Subforum</a></li>
 <li>Ex topic name: <code>Ambian 20.02 (Chiru) Release Thread</code></li>
@@ -284,14 +252,13 @@ Testing Tracking Sheet: https://example.com/link  (google sheets)
 
 The goal of this thread is to discuss testing, bugfixes, and the overall quality of the release.  Once the release is complete, this thread should be locked and unpinned. 
 </code></pre>
-
 <ul>
-<li>Before Code Freeze &ndash;  Make note in the thread the incomplete jira issues tagged for the release <a href="http://forum.armbian.com/topic/12763-armbian-2002-chiru-release-thread/?do=findComment&amp;comment=93245">example</a></li>
+<li>Before Code Freeze –  Make note in the thread the incomplete jira issues tagged for the release <a href="http://forum.armbian.com/topic/12763-armbian-2002-chiru-release-thread/?do=findComment&amp;comment=93245">example</a></li>
 <li>After test images are procuded, engage in community for assistants wih testing.. forums, twitter, etc.  <a href="http:///github.com/armbian/autotests">share this tool</a></li>
 </ul>
-<h2 id="2-release-candidate-branch-management">2. Release Candidate Branch Management<a class="headerlink" href="#2-release-candidate-branch-management" title="Permanent link">&para;</a></h2>
+<h2 id="2-release-candidate-branch-management">2. Release Candidate Branch Management<a class="headerlink" href="#2-release-candidate-branch-management" title="Permanent link">¶</a></h2>
 <ul>
-<li>For code freeze &ndash; create a RC branch in the format <code>(vYY.MM-rcX)</code>  ex: <code>v20.02-rc1</code></li>
+<li>For code freeze – create a RC branch in the format <code>(vYY.MM-rcX)</code>  ex: <code>v20.02-rc1</code></li>
 <li>If Possible, create Jira tickets for major changes in github that were not tracked in Jira</li>
 <li>Begin Testing Process.  See <a href="#Release_Teting">Release Testing</a></li>
 <li>Do not modify branch directy.  Only accept PRs</li>
@@ -302,7 +269,7 @@ The goal of this thread is to discuss testing, bugfixes, and the overall quality
 <li>Cherry-pick bugfixes back into master</li>
 <li>Create Final Release branch from RC</li>
 </ul>
-<h2 id="3-release">3. Release<a class="headerlink" href="#3-release" title="Permanent link">&para;</a></h2>
+<h2 id="3-release">3. Release<a class="headerlink" href="#3-release" title="Permanent link">¶</a></h2>
 <ul>
 <li>In Github create a Release from final release branch</li>
 <li>Copy Release notes generated by Jira Release into Github form</li>
@@ -311,74 +278,53 @@ The goal of this thread is to discuss testing, bugfixes, and the overall quality
 <li>Update armbian documentation to reflect current release</li>
 <li>Celebrate</li>
 </ul>
-<h1 id="release-testing">Release Testing<a class="headerlink" href="#release-testing" title="Permanent link">&para;</a></h1>
+<h1 id="release-testing">Release Testing<a class="headerlink" href="#release-testing" title="Permanent link">¶</a></h1>
 <p>See <a href="#Opportunities_for_Improvement">Opportunties for improvement</a></p>
-<h1 id="reflection-on-prior-releases">Reflection on Prior Releases<a class="headerlink" href="#reflection-on-prior-releases" title="Permanent link">&para;</a></h1>
-<h2 id="opportunities-for-improvement">Opportunities for Improvement<a class="headerlink" href="#opportunities-for-improvement" title="Permanent link">&para;</a></h2>
-<h2 id="wireless-driver-testing">wireless driver testing<a class="headerlink" href="#wireless-driver-testing" title="Permanent link">&para;</a></h2>
+<h1 id="reflection-on-prior-releases">Reflection on Prior Releases<a class="headerlink" href="#reflection-on-prior-releases" title="Permanent link">¶</a></h1>
+<h2 id="opportunities-for-improvement">Opportunities for Improvement<a class="headerlink" href="#opportunities-for-improvement" title="Permanent link">¶</a></h2>
+<h2 id="wireless-driver-testing">wireless driver testing<a class="headerlink" href="#wireless-driver-testing" title="Permanent link">¶</a></h2>
 <ul>
 <li>wireless is a particularly sensitive issue.  We need to test, fix, or at least be able to inform others of what is broken</li>
 </ul>
-<h3 id="bug-tracking">Bug Tracking<a class="headerlink" href="#bug-tracking" title="Permanent link">&para;</a></h3>
-<h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h3>
-<h3 id="image-downloads">Image Downloads<a class="headerlink" href="#image-downloads" title="Permanent link">&para;</a></h3>
-<h2 id="positive-observations">Positive Observations<a class="headerlink" href="#positive-observations" title="Permanent link">&para;</a></h2>
+<h3 id="bug-tracking">Bug Tracking<a class="headerlink" href="#bug-tracking" title="Permanent link">¶</a></h3>
+<h3 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">¶</a></h3>
+<h3 id="image-downloads">Image Downloads<a class="headerlink" href="#image-downloads" title="Permanent link">¶</a></h3>
+<h2 id="positive-observations">Positive Observations<a class="headerlink" href="#positive-observations" title="Permanent link">¶</a></h2>
 <ul>
 <li>Good response from community for testing assistance</li>
 <li>Release was on time</li>
 </ul>
-<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Release_Changelog/" class="btn btn-neutral float-right" title="Changelog">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../Process_Documentation/" class="btn btn-neutral" title="Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+<h1 id="_1"><a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../Release_Changelog/" title="Changelog">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../Process_Documentation/" title="Documentation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../Process_Documentation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../Release_Changelog/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../Process_Documentation/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../Release_Changelog/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>

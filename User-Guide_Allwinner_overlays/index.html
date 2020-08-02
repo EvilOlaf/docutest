@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Armbian team">
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Allwinner DT overlays - Armbian Documentation</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  
-  <script>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Armbian team" name="author"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Allwinner DT overlays - Armbian Documentation</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet"/>
+<script>
     // Current page data
     var mkdocs_page_name = "Allwinner DT overlays";
     var mkdocs_page_input_path = "User-Guide_Allwinner_overlays.md";
     var mkdocs_page_url = null;
   </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-  <script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -37,199 +32,172 @@
       ga('create', 'UA-284946-9', 'docs.armbian.com');
       ga('send', 'pageview');
   </script>
-  
-</head>
-
+</link><link href="../pdf/document.pdf" rel="alternate" title="PDF" type="application/pdf"/></head>
 <body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-
-    
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Armbian Documentation</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Armbian Documentation</a>
 </div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">User Guide</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Allwinner DT overlays</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#armbian-specific-notes">Armbian specific notes</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#using-custom-overlays">Using custom overlays</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#armbianenvtxt-entries-reference">armbianEnv.txt entries reference</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#kernel-provided-vs-user-provided-overlays">Kernel provided vs user provided overlays</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#activation">Activation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#overlay-parameters">Overlay parameters</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#overlay-bus-selection">Overlay bus selection</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#overlay-pinmux-conflicts">Overlay pinmux conflicts</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#overlay-device-endpoint-conflicts">Overlay device endpoint conflicts</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#overlay-compatibility">Overlay compatibility</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#notes-regarding-spi-and-i2s-overlays">Notes regarding SPI and I2S overlays</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#debugging">Debugging</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#example-bootarmbianenvtxt-contents">Example /boot/armbianEnv.txt contents:</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#example-of-serial-console-log-when-using-several-overlays">Example of serial console log when using several overlays:</a>
-    </li>
-        </ul>
-    </li>
-    </ul>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Hardware Notes</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Developer Guide</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Contributor Process</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Release management</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Community</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
-                    </li>
-                </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Armbian Documentation</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
-          <li>User Guide &raquo;</li>
-        
-      
-    
-    <li>Allwinner DT overlays</li>
-    <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/armbian/documentation/edit/master/docs/User-Guide_Allwinner_overlays.md"
-          class="icon icon-github"> Edit on Github</a>
-      
-    </li>
-  </ul>
-  
-  <hr/>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Getting-Started/">Getting Started</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Quick_facts/">Quick facts</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Basic-Troubleshooting/">Troubleshooting</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Advanced-Features/">Advanced Features</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Fine-Tuning/">Fine Tuning</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Armbian-Config/">Armbian config</a>
+</li>
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Allwinner DT overlays</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#armbian-specific-notes">Armbian specific notes</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#using-custom-overlays">Using custom overlays</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#armbianenvtxt-entries-reference">armbianEnv.txt entries reference</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#kernel-provided-vs-user-provided-overlays">Kernel provided vs user provided overlays</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#activation">Activation</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overlay-parameters">Overlay parameters</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overlay-bus-selection">Overlay bus selection</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overlay-pinmux-conflicts">Overlay pinmux conflicts</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overlay-device-endpoint-conflicts">Overlay device endpoint conflicts</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#overlay-compatibility">Overlay compatibility</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#notes-regarding-spi-and-i2s-overlays">Notes regarding SPI and I2S overlays</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#debugging">Debugging</a>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#example-bootarmbianenvtxt-contents">Example /boot/armbianEnv.txt contents:</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-of-serial-console-log-when-using-several-overlays">Example of serial console log when using several overlays:</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../User-Guide_Migration_from_Bananian/">Migration from Bananian</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Hardware Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner/">Allwinner (Generic)</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-A20/">A10 and A20</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H3/">H2+ and H3</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H5-A64/">H5 and A64</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Allwinner-H6/">H6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Freescale-imx6/">Freescale i.MX6</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Hardware_Marvell/">Marvell Armada</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Developer Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Preparation/">Building Armbian</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Using-Vagrant/">Building with Vagrant</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Building-with-Docker/">Building with Docker</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_Build-Options/">Build Options</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_User-Configurations/">User Configurations</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Developer-Guide_FEL-boot/">FEL boot</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Contributor Process</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Contribute/">Contribute</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Documentation/">Documentation</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Release management</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Process_Release-Model/">Model</a>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Release_Changelog/">Changelog</a>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Community</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Community_IRC/">IRC</a>
+</li>
+</ul>
 </div>
-          <div role="main">
-            <div class="section">
-              
-                <h1 id="device-tree-overlays">Device Tree overlays<a class="headerlink" href="#device-tree-overlays" title="Permanent link">&para;</a></h1>
-<p>Most in-circuit and GPIO based interfaces (SPI, I2C, I2S, UART, &hellip;) don&rsquo;t have a mechanism for detecting and identifying devices connected to the bus,
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Armbian Documentation</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>User Guide »</li>
+<li>Allwinner DT overlays</li>
+<li class="wy-breadcrumbs-aside">
+<a class="icon icon-github" href="https://github.com/armbian/documentation/edit/master/docs/User-Guide_Allwinner_overlays.md"> Edit on Github</a>
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="device-tree-overlays">Device Tree overlays<a class="headerlink" href="#device-tree-overlays" title="Permanent link">¶</a></h1>
+<p>Most in-circuit and GPIO based interfaces (SPI, I2C, I2S, UART, …) don’t have a mechanism for detecting and identifying devices connected to the bus,
 so Linux kernel has to be told explicitly about the device and its configuration details.</p>
 <p>While Device Tree is a way of describing hardware configuration to the kernel, Device Tree overlays are a way for modifying the DT
 in order to provide the kernel and kernel drivers with details about external devices or to activate interfaces disabled by default.</p>
 <p>Note: from the Linux kernel maintainer perspective all unused in-circuit type interfaces that use GPIO pins should be disabled by default and all pins on pin headers or soldering pads will be configured as standard GPIOs.</p>
 <p>Note: from the Linux kernel maintainer perspective all dedicated interfaces like USB, Ethernet or analog audio that are wired to soldering pads or a pin headers instead of specialized sockets (like USB socket, Ethernet socket or 3.5mm jack) will be left disabled by default.</p>
-<h3 id="armbian-specific-notes">Armbian specific notes<a class="headerlink" href="#armbian-specific-notes" title="Permanent link">&para;</a></h3>
+<h3 id="armbian-specific-notes">Armbian specific notes<a class="headerlink" href="#armbian-specific-notes" title="Permanent link">¶</a></h3>
 <ul>
 <li>DT overlays are a Work-in-Progress (WIP) feature, present <strong>only in fresh images starting with 5.30</strong>, nightly and user made images</li>
 <li>For older images (even upgraded to 5.30 or later) manual update of the u-boot and the boot script is required</li>
 <li>Currently implemented only for sunxi based devices that use mainline u-boot and kernel</li>
 </ul>
 <p>Please note that different SoCs will have different sets of available overlays.</p>
-<h3 id="quick-start">Quick start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h3>
+<h3 id="quick-start">Quick start<a class="headerlink" href="#quick-start" title="Permanent link">¶</a></h3>
 <ol>
 <li>Check the <code>README.&lt;soc-id&gt;-overlays</code> in <code>/boot/dtb/overlay/</code> (32-bit SoCs) or <code>/boot/dtb/allwinner/overlay/</code> (64-bit SoCs) for a list of provided overlays, their required and optional parameters</li>
 <li>Add names of overlays you want to activate to <code>overlays=</code> line in <code>/boot/armbianEnv.txt</code>, separated with spaces</li>
 <li>Add required parameters with their values to <code>/boot/armbianEnv.txt</code>, one per line</li>
 <li>Add optional parameters with their values to <code>/boot/armbianEnv.txt</code> if you want to change the default value, one per line</li>
-<li>If you didn&rsquo;t find the required overlay or want to change one of provided overlays, refer to &ldquo;Using custom overlays&rdquo; section</li>
+<li>If you didn’t find the required overlay or want to change one of provided overlays, refer to “Using custom overlays” section</li>
 <li>Reboot</li>
 </ol>
-<h3 id="using-custom-overlays">Using custom overlays<a class="headerlink" href="#using-custom-overlays" title="Permanent link">&para;</a></h3>
+<h3 id="using-custom-overlays">Using custom overlays<a class="headerlink" href="#using-custom-overlays" title="Permanent link">¶</a></h3>
 <ol>
 <li>Check <a href="https://github.com/zador-blood-stained/sunxi-DT-overlays-armbian/tree/master/examples">here</a> for some example overlays</li>
 <li>Copy or create your overlay file (with <code>.dts</code> extension) on the device</li>
@@ -237,14 +205,14 @@ in order to provide the kernel and kernel drivers with details about external de
 <li>Compile and activate the overlay by running <code>armbian-add-overlay &lt;overlay_file.dts&gt;</code> as root, i.e. <code>sudo armbian-add-overlay sht15.dts</code></li>
 <li>Reboot</li>
 </ol>
-<h3 id="armbianenvtxt-entries-reference">armbianEnv.txt entries reference<a class="headerlink" href="#armbianenvtxt-entries-reference" title="Permanent link">&para;</a></h3>
+<h3 id="armbianenvtxt-entries-reference">armbianEnv.txt entries reference<a class="headerlink" href="#armbianenvtxt-entries-reference" title="Permanent link">¶</a></h3>
 <ul>
 <li><code>overlay_prefix</code> - prefix for the DT and overlay file names, set at OS image creation time</li>
 <li><code>overlays</code> - list of overlays to activate from kernel directory</li>
 <li><code>user_overlays</code> - list of overlays to activate from <code>/boot/overlay-user/</code> directory</li>
 <li><code>param_*</code> - overlay parameters</li>
 </ul>
-<h3 id="kernel-provided-vs-user-provided-overlays">Kernel provided vs user provided overlays<a class="headerlink" href="#kernel-provided-vs-user-provided-overlays" title="Permanent link">&para;</a></h3>
+<h3 id="kernel-provided-vs-user-provided-overlays">Kernel provided vs user provided overlays<a class="headerlink" href="#kernel-provided-vs-user-provided-overlays" title="Permanent link">¶</a></h3>
 <p>Overlays can be loaded from 2 locations:</p>
 <ul>
 <li><code>/boot/dtb/overlay/</code> (<code>/boot/dtb/allwinner/overlay/</code> for 64-bit SoCs) - kernel provided overlays</li>
@@ -258,19 +226,19 @@ in order to provide the kernel and kernel drivers with details about external de
 <li>User provided overlays directory is empty by default and is meant for storing and using user created overlays that are not present in the kernel packages or modified stock overlays</li>
 <li>User provided overlays are activated by the file name (excluding the extension), i.e. for file <code>adafruit13m.dtbo</code> overlay name would be <code>adafruit13m</code></li>
 </ul>
-<h3 id="activation">Activation<a class="headerlink" href="#activation" title="Permanent link">&para;</a></h3>
+<h3 id="activation">Activation<a class="headerlink" href="#activation" title="Permanent link">¶</a></h3>
 <p>DT overlays are activated by editing u-boot environment file <code>/boot/armbianEnv.txt</code></p>
 <ul>
 <li>Kernel provided overlays are activated by adding a name to the <code>overlays</code> variable</li>
 <li>User provided overlays are activated by adding a name to the <code>user_overlays</code> variable</li>
 <li>No more than one <code>overlays</code> line and one <code>user_overlays</code> line can be present in the environment file</li>
 <li>Multiple names should be separated by space</li>
-<li>If activated overlays have parameters marked as &ldquo;Required&rdquo;, those parameters have to be set to proper values</li>
+<li>If activated overlays have parameters marked as “Required”, those parameters have to be set to proper values</li>
 <li>Reboot is required for any changes to take effect</li>
 </ul>
-<h3 id="overlay-parameters">Overlay parameters<a class="headerlink" href="#overlay-parameters" title="Permanent link">&para;</a></h3>
+<h3 id="overlay-parameters">Overlay parameters<a class="headerlink" href="#overlay-parameters" title="Permanent link">¶</a></h3>
 <p>Some overlays have additional parameters that can be set.</p>
-<p>Parameters marked as &ldquo;Required&rdquo; have to be set if overlay with these parameters is activated, other parameters are not mandatory if default value is suitable.</p>
+<p>Parameters marked as “Required” have to be set if overlay with these parameters is activated, other parameters are not mandatory if default value is suitable.</p>
 <p>Parameters are set by adding their name and value to <code>/boot/armbianEnv.txt</code>, each parameter should be added on a new line.</p>
 <p>Please refer to <code>README.&lt;SoC_prefix&gt;-overlays</code> files in <code>/boot/dtb/overlay/</code> (<code>/boot/dtb/allwinner/overlay/</code> for 64-bit SoCs) directory for supported parameters, i.e. <code>README.sun8i-h3-overlays</code> for H3 based boards.</p>
 <p>Parameters of type <code>pin</code> require special format:</p>
@@ -280,28 +248,28 @@ in order to provide the kernel and kernel drivers with details about external de
 <li>Numbers should not contain leading zeros</li>
 <li>Examples: good - <code>PA9</code>, <code>PG12</code>; bad - <code>pa2</code>, <code>PG08</code></li>
 </ul>
-<h3 id="overlay-bus-selection">Overlay bus selection<a class="headerlink" href="#overlay-bus-selection" title="Permanent link">&para;</a></h3>
+<h3 id="overlay-bus-selection">Overlay bus selection<a class="headerlink" href="#overlay-bus-selection" title="Permanent link">¶</a></h3>
 <p>SoCs may contain multiple bus controllers of the same type, i.e. Allwinner H3 contains 2 SPI controllers and Allwinner A20 contains 4 SPI controllers.</p>
 <p>Please refer to your board documentation and schematic to determine what pins are wired to the pin headers and thus what bus number should be used in each case.</p>
-<h3 id="overlay-pinmux-conflicts">Overlay pinmux conflicts<a class="headerlink" href="#overlay-pinmux-conflicts" title="Permanent link">&para;</a></h3>
+<h3 id="overlay-pinmux-conflicts">Overlay pinmux conflicts<a class="headerlink" href="#overlay-pinmux-conflicts" title="Permanent link">¶</a></h3>
 <p>Some controllers may share the SoC pins in some configurations. For example on Allwinner H3 UART 3 and SPI 1 use the same pins - <code>PA13</code>, <code>PA14</code>, <code>PA15</code>, <code>PA16</code>.
 In this case activating both UART 3 and SPI 1 would result in a conflict, and on practice only one interface (either SPI or UART) will be accessible on these pins.</p>
 <p>Please check the SoC specific README, board schematic, SoC datasheet or other documentation if you are unsure about possible conflicts if activating multiple overlays for the controllers that use shared (muxed) pins.</p>
-<h3 id="overlay-device-endpoint-conflicts">Overlay device endpoint conflicts<a class="headerlink" href="#overlay-device-endpoint-conflicts" title="Permanent link">&para;</a></h3>
-<p>Overlays for devices that use addresses or similar mechanisms (i.e. SPI chip selects) can&rsquo;t be activated simultaneously if addresses (chip selects) are identical.</p>
+<h3 id="overlay-device-endpoint-conflicts">Overlay device endpoint conflicts<a class="headerlink" href="#overlay-device-endpoint-conflicts" title="Permanent link">¶</a></h3>
+<p>Overlays for devices that use addresses or similar mechanisms (i.e. SPI chip selects) can’t be activated simultaneously if addresses (chip selects) are identical.</p>
 <p>For example A20 SPI controller 1 has only one hardware chip select, so <code>spi-spidev</code> and <code>spi-jedec-nor</code> overlays cannot be activated both if they would use the same bus number and chip select.</p>
-<h3 id="overlay-compatibility">Overlay compatibility<a class="headerlink" href="#overlay-compatibility" title="Permanent link">&para;</a></h3>
+<h3 id="overlay-compatibility">Overlay compatibility<a class="headerlink" href="#overlay-compatibility" title="Permanent link">¶</a></h3>
 <p>Device Tree overlays for different platforms and SoCs are not directly compatible.
 This, for example, means that overlays for H3 may need some changes to work on A20, and that Raspberry Pi overlays will need adjustments in order to be used on Allwinner based boards.</p>
 <p>Rework may include changing labels, references (phandles) and pinconf bindings.</p>
-<h3 id="notes-regarding-spi-and-i2s-overlays">Notes regarding SPI and I2S overlays<a class="headerlink" href="#notes-regarding-spi-and-i2s-overlays" title="Permanent link">&para;</a></h3>
+<h3 id="notes-regarding-spi-and-i2s-overlays">Notes regarding SPI and I2S overlays<a class="headerlink" href="#notes-regarding-spi-and-i2s-overlays" title="Permanent link">¶</a></h3>
 <p>Activating a device on SPI or I2S bus may require more than one overlay.
 In case a bus overlay like <code>spi0</code> or <code>i2s0</code> exist for the target SoC they need to be activated in addition to a slave device overlay (provided or custom/user-made).
 Please note that these overlays (<code>spi0</code>, <code>i2s0</code>) do not enable any slave devices (like spidev or I2S codec).</p>
-<h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h3>
+<h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">¶</a></h3>
 <p>As overlays and overlay parameters are applied by the u-boot, it is impossible to get any debugging information (such as error messages) from the OS.</p>
 <p>Serial console on UART 0 is <strong>required</strong> to debug DT overlay related problems.</p>
-<h3 id="example-bootarmbianenvtxt-contents">Example <code>/boot/armbianEnv.txt</code> contents:<a class="headerlink" href="#example-bootarmbianenvtxt-contents" title="Permanent link">&para;</a></h3>
+<h3 id="example-bootarmbianenvtxt-contents">Example <code>/boot/armbianEnv.txt</code> contents:<a class="headerlink" href="#example-bootarmbianenvtxt-contents" title="Permanent link">¶</a></h3>
 <pre><code>verbosity=1
 console=serial
 overlay_prefix=sun8i-h3
@@ -313,7 +281,7 @@ param_w1_pin_int_pullup=1
 param_uart1_rtscts=1
 param_spidev_spi_bus=0
 </code></pre>
-<h5 id="example-of-serial-console-log-when-using-several-overlays">Example of serial console log when using several overlays:<a class="headerlink" href="#example-of-serial-console-log-when-using-several-overlays" title="Permanent link">&para;</a></h5>
+<h5 id="example-of-serial-console-log-when-using-several-overlays">Example of serial console log when using several overlays:<a class="headerlink" href="#example-of-serial-console-log-when-using-several-overlays" title="Permanent link">¶</a></h5>
 <pre><code>## Executing script at 43100000
 U-boot loaded from SD
 Boot script loaded from mmc
@@ -350,57 +318,36 @@ tmp_pin=20
 
 Starting kernel ...
 </code></pre>
-              
-            </div>
-          </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../User-Guide_Migration_from_Bananian/" class="btn btn-neutral float-right" title="Migration from Bananian">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../User-Guide_Armbian-Config/" class="btn btn-neutral" title="Armbian config"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
-  </div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../User-Guide_Migration_from_Bananian/" title="Migration from Bananian">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../User-Guide_Armbian-Config/" title="Armbian config"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-      
-        <span><a href="../User-Guide_Armbian-Config/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../User-Guide_Migration_from_Bananian/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../User-Guide_Armbian-Config/" style="color: #fcfcfc;">« Previous</a></span>
+<span style="margin-left: 15px"><a href="../User-Guide_Migration_from_Bananian/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="">
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
         };
     </script>
-
 </body>
 </html>
