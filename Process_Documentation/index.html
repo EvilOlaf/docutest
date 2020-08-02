@@ -103,30 +103,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../Process_Merge-Policy/">Merge Policy</a>
 </li>
 <li class="toctree-l1 current"><a class="reference internal current" href="./">Documentation</a>
-<ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="#gitignore">.gitignore</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#required-packages">Required Packages</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#tools">Tools</a>
-<ul>
-<li class="toctree-l3"><a class="reference internal" href="#mkarmbiandocspy">mkArmbianDocs.py</a>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#missing-tools">missing tools</a>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#generating">generating</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#testing">testing</a>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick Start</a>
-</li>
-</ul>
 </li>
 </ul>
 <p class="caption"><span class="caption-text">Release management</span></p>
@@ -164,74 +140,7 @@
 </div>
 <div role="main">
 <div class="section">
-<h1 id="armbian-documentation">Armbian Documentation<a class="headerlink" href="#armbian-documentation" title="Permanent link">¶</a></h1>
-<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">¶</a></h2>
-<p>Documentation is written in markdown and stored in the <code>docs/</code> subfolder.  Images go in <code>docs/images</code></p>
-<p>This repo is meant for storing and quick glances.  Official output is <a href="http://docs.armbian.com">http://docs.armbian.com</a>.</p>
-<p>Armbian Documentation is available in the following formats:</p>
-<ul>
-<li>mkdocs site <a href="http://docs.armbian.com">http://docs.armbian.com</a>.</li>
-<li>PDF user guides (in progress)</li>
-</ul>
-<p>Armbian Documentation relies on a file naming convention:</p>
-<p><code>Parent-Topic-Name_Child-Topic-Name.md</code></p>
-<p>Parent-Topic-Name and Child-Topic-Name are separated by an underscore <code>_</code>.  Hyphens <code>-</code> are automatically converted to spaces.</p>
-<p>Please try to avoid creating new parent topics unless absolutely necessary.</p>
-<p>Current Parent Topics:</p>
-<ul>
-<li>Hardware</li>
-<li>Process</li>
-<li>Release</li>
-<li>Developer Guide</li>
-<li>User Guide</li>
-<li>Howto</li>
-</ul>
-<h3 id="gitignore">.gitignore<a class="headerlink" href="#gitignore" title="Permanent link">¶</a></h3>
-<p>For easier testing and commits <code>.gitignore</code> is configured to ignore <code>site/</code></p>
-<p><code>mkdocs.yml</code> should probably be added, but we can commit for now</p>
-<h2 id="required-packages">Required Packages<a class="headerlink" href="#required-packages" title="Permanent link">¶</a></h2>
-<p>The documentation build process will require the following packages:</p>
-<ul>
-<li>git</li>
-<li>python-jinja2</li>
-<li>mkdocs</li>
-</ul>
-<p>Install these on the development host using:</p>
-<p><code>sudo apt-get install -y -qq git python-jinja2 mkdocs</code></p>
-<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">¶</a></h2>
-<h3 id="mkarmbiandocspy">mkArmbianDocs.py<a class="headerlink" href="#mkarmbiandocspy" title="Permanent link">¶</a></h3>
-<p>generates mkdocs.yml file based on contents of <code>docs/</code></p>
-<ul>
-<li>command-line options for input and output directories</li>
-<li>requires the python-jinja2 module which may not be installed by default</li>
-<li>not needed unless making changes to the structure of the documentation</li>
-<li>see <code>mkArmbianDocs.py -h</code> for help</li>
-</ul>
-<h3 id="missing-tools">missing tools<a class="headerlink" href="#missing-tools" title="Permanent link">¶</a></h3>
-<p>The following capabilities are not yet available.</p>
-<ul>
-<li>html2doc output to PDF user manual</li>
-<li>automated mkdocs deployment to <a href="http://docs.armbian.com">http://docs.armbian.com</a></li>
-</ul>
-<h2 id="generating">generating<a class="headerlink" href="#generating" title="Permanent link">¶</a></h2>
-<p>From the parent folder of the repo, run:</p>
-<p><code>tools/mkArmbianDocs.py &amp;&amp; mkdocs build</code></p>
-<p>This will generate the mkdocs.yml configuration file and then generate the mkdocs site to the <code>site/</code> folder.</p>
-<h2 id="testing">testing<a class="headerlink" href="#testing" title="Permanent link">¶</a></h2>
-<p>To preview locally, execute the preview server <code>mkdocs serve</code>. You will be able to make edits to existing files and observe the results in real time.</p>
-<p>After changing text in an existing file, use this command to rebuild and view the documentation:</p>
-<p><code>mkdocs build --clean &amp;&amp; mkdocs serve</code></p>
-<p>After adding a new file, either hand-edit <code>mkdocs.yml</code>, or rerun <code>tools/mkArmbianDocs.py</code>.</p>
-<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">¶</a></h2>
-<pre><code>pip install mkdocs
-git clone https://github.com/armbian/documentation
-#vim docs/[Parent Topic Example]-child-topic-example.md
-#generate config, build, launch local preview server
-tools/mkArmbianDocs.py &amp;&amp; mkdocs build --clean &amp;&amp; mkdocs serve
-git add docs/*.md
-git commit -m "added new howto on exampling"
-git push
-</code></pre>
+<p>Generated documentation is hosted here: <a href="https://evilolaf.github.io/docutest/">https://evilolaf.github.io/docutest/</a></p>
 </div>
 </div>
 <footer>
